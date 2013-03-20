@@ -11,7 +11,7 @@
     color: #F82 !important;
   }
 
-  #page_wrap, #side_bar, #side_bar ol li .left_row, .back, 
+  #page_wrap, #side_bar, #side_bar ol li .left_row, .back, .app_notify_row.new ,
   .search_results td.results, .search_results, .search_table, .search_table td.results,
   .bp_post, .feed_row, #profile_actions a,
   .wide_wall_module, ul.t0 a, .side_filter, .audio_friend, #audio.new .audio_search, .audio_search,
@@ -22,7 +22,7 @@
   }
 
   /**** Passives ****/
-  .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about ,
+  .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about , #mail_bar, .pv_comment , 
   .module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom ,
   .tabs, #profile_full_info h4 b, .wl_owner_head_wrap, .rate_right,
   .settings_view_as_text, #new_ticket, .pd_apps_summary, .pd_apps_header,
@@ -50,7 +50,7 @@
   }
 
   /**** Highlighted ****/
-  #docs_choose_upload_area, .left_count_wrap, .feedback_row_answer_wrap,
+  #docs_choose_upload_area, .left_count_wrap, .feedback_row_answer_wrap, #mail_rows_t tr.new_msg,
   .selector_container td.selector_dropdown, .selector_container td.selector,
   .selector_container table.selector_table, .docs_choose_def_icon, div.wdd, .dialogs_new_msg
   {
@@ -60,7 +60,7 @@
   }
 
   /***** Forms *****/
-  .wall_module #submit_post_box, iframe, .token ,
+  .wall_module #submit_post_box, iframe, .token , 
   .box_body, .mail_box_cont, .fc_clist_filter_wrap, #im_resizer_wrap, .actions, #mv_controls,
   .wall_module .reply_fakebox_wrap, #wl_reply_form_inner, #im_peer_controls_wrap,
   .wall_module .reply_fakebox, .tdd_search .tdd_control, #fmenu, .docs_add_new, .docs_item_icon , .tdd_tag,
@@ -72,7 +72,7 @@
   }
 
   /**** Border recolor ****/
-  #wrap1, #wrap2, .reply_field_wrap, .pedit_separator_bottom, 
+  #wrap1, #wrap2, .reply_field_wrap, .pedit_separator_bottom,  #mail_bar,.pv_comment , 
   .pedit_privacy_padding_fix,.pedit_controls_separator, .separator div, .separator, .summary_tabs, .reply, .docs_item, .post, .more_div,
   .left_friend_all_link, .left_app_all_link, h4, .wall_module .post, #docs_search_summary_cont, .docs_side_panel,
   .summary_wrap, #photos_upload_area, .docs_search_bar, .audio_wrap .main_panel, .docs_filter_sep, .audio_filter_sep,
@@ -83,6 +83,13 @@
   #unions_navigation.ads_unions_navigation_about , #all_shown, #feed_wall .feed_reposts_more_link
   {
     border-color: #333 !important; 
+  }
+
+  /**** Deleted ****/  
+  .mail_del_row
+  {
+    color: #F22 !important; 
+    background-color: #211 !important; 
   }
 
   /**** No border ****/
@@ -116,6 +123,11 @@
     background-color: #141 !important; 
     border:none !important; 
   }
+
+  /**** form layer ****/
+  #layer_wrap, #box_layer_wrap {
+    background-color:rgba(0,0,0, 0.9) !important;
+    }
 
   /*.side_filter { 
     border:1px solid #080F08 !important; 
