@@ -1,0 +1,123 @@
+@-moz-document domain(vk.com) 
+{ 
+
+  body, #page_header, #page_header .left, #page_header .right 
+  {
+   background: #000 !important; color: #EEE !important;
+  }
+  
+  a 
+  {
+    color: #F82 !important;
+  }
+
+  #page_wrap, #side_bar, #side_bar ol li .left_row, .back, 
+  .search_results td.results, .search_results, .search_table, .search_table td.results,
+  .bp_post, .feed_row, #profile_actions a,
+  .wide_wall_module, ul.t0 a, .side_filter, .audio_friend, #audio.new .audio_search, .audio_search,
+  .reply_field_wrap, .group_list_row, .reply, .photo_row a, .apps_ads_rows,
+  .apps_feed_info_str, .apps_feed_arrow, .wall_fixed .wall_post_text, #info_module_cont, #profile_main_actions
+  { 
+    background: none !important;
+  }
+
+  /**** Passives ****/
+  .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about ,
+  .module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom ,
+  .tabs, #profile_full_info h4 b, .wl_owner_head_wrap, .rate_right,
+  .settings_view_as_text, #new_ticket, .pd_apps_summary, .pd_apps_header,
+  #pad_footer, .docs_search_bar, .apps_cat_filter, .app_tabs.t_bar, .side_panel, .box_controls, .bt_header,
+  #im_footer_filler, .im_new_msg .im_log_author, .im_new_msg .im_log_body, 
+  .im_new_msg .im_log_date, #apps_wall_post_header, .im_editable, .wl_post_reply_form_forbidden
+  {
+    background-color: #08080F !important; 
+  }
+
+  /**** Actives ****/
+  #search_query_wrap, #docs_choose_more, #im_sound_controls, #pd, .fc_tab_txt, .rate_left, .post_like, .post_share, .search,
+  #albums_load_more, #profile_editor, .page_actions a, .app_search, #group_like_module,
+  .side_filter, #feed_bar, #pva_more_photos, #pvsa_more_photos, .video_search, .video_albums_show_more ,
+  #photos_upload_area, #im_bar, .groups_list_search, .wr_header, .replies_open, .reply_fakebox, #settings_panel, .settings_privacy,
+  .summary_tabs, .docs_side_panel, #settings_panel .msg, .msg, .box_msg, #ac
+  {
+    background-color: #080D08 !important; 
+  }
+
+  /**** Float window ****/
+  #wk_box, #pv_box, #pad_cont, .fc_tab_log , #stl_bg, #fc_contacts, .box_body 
+  {
+    background-color: #080808 !important; 
+  }
+
+  /**** Highlighted ****/
+  #docs_choose_upload_area, .left_count_wrap, .feedback_row_answer_wrap,
+  .selector_container td.selector_dropdown, .selector_container td.selector,
+  .selector_container table.selector_table, .docs_choose_def_icon, div.wdd, .dialogs_new_msg
+  {
+    border-color: #224 !important;
+    background-color: #121 !important; 
+    color: #2F2 !important; 
+  }
+
+  /***** Forms *****/
+  .wall_module #submit_post_box, iframe, .token ,
+  .box_body, .mail_box_cont, .fc_clist_filter_wrap, #im_resizer_wrap, .actions, #mv_controls,
+  .wall_module .reply_fakebox_wrap, #wl_reply_form_inner, #im_peer_controls_wrap,
+  .wall_module .reply_fakebox, .tdd_search .tdd_control, #fmenu, .docs_add_new, .docs_item_icon , .tdd_tag,
+  input.text, input.search, textarea, input.big_text, .audio_filter, #audio_more_friends, .reply_box
+  {
+    color: #2F2 !important; 
+    background-color: #080D08 !important; 
+    border:1px dashed #333 !important; 
+  }
+
+  /**** Border recolor ****/
+  #wrap1, #wrap2, .reply_field_wrap, .pedit_separator_bottom, 
+  .pedit_privacy_padding_fix,.pedit_controls_separator, .separator div, .separator, .summary_tabs, .reply, .docs_item, .post, .more_div,
+  .left_friend_all_link, .left_app_all_link, h4, .wall_module .post, #docs_search_summary_cont, .docs_side_panel,
+  .summary_wrap, #photos_upload_area, .docs_search_bar, .audio_wrap .main_panel, .docs_filter_sep, .audio_filter_sep,
+  .p_header_bottom, .search, #friends .user_block, #friends .main_panel, .groups_list_search, .group_list_row, .wall_module .published_by_quote,
+  .mv_cont .narrow_column, .settings_view_as_text, .video_search, .box_controls, .feedback_grouped_row_wrap,
+  .tickets_faq_row, #feed_bar, .im_log_t td, #unions_navigation.ads_unions_navigation_about ,
+  #unions_navigation.ads_unions_navigation_about .nav ,#unions_navigation a.nav, #unions_navigation .nav_separator ,
+  #unions_navigation.ads_unions_navigation_about , #all_shown, #feed_wall .feed_reposts_more_link
+  {
+    border-color: #333 !important; 
+  }
+
+  /**** No border ****/
+  #profile .narrow_column .header_top,
+  .docs_list,
+  #profile .narrow_column .module_body 
+  {
+    border: none !important; 
+  }
+
+  #content
+  { color: #EEE !important; }
+
+  /**** Editable text ****/
+  .im_editable, ul.listing li span 
+  { color: #8F8 !important; }
+
+  .cur_section
+  {
+    background-color: #244 !important;
+    color: #EEF !important;
+  }
+
+  /***** Tabs ****/
+  .tl1, .tl2, .sep, #header_wrap1, #header {
+    background-color: #111 !important; 
+    border:none !important; 
+  }
+
+  .active_link .tl1, .active_link .tl2 {
+    background-color: #141 !important; 
+    border:none !important; 
+  }
+
+  /*.side_filter { 
+    border:1px solid #080F08 !important; 
+  } */
+}
