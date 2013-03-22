@@ -1,15 +1,15 @@
-/* VSekte-0.2.6 theme for the http://vk.com (V kontakte) */
+/* VSekte-0.2.7 theme for the http://vk.com (V kontakte) */
 
 @-moz-document domain(vk.com) 
 { 
 
 /* ======== Major styles ======== */
 
-body
+body, .app_i_page_screen 
 { background: #000 !important;  }
 
 /* Base text */
-body, #content
+body, #content, .wall_module div.page_media_link_desc 
 { color: #EEE !important; }
 
 /* Recolor top nav links to match the top style */
@@ -61,12 +61,24 @@ a
 }
 
 /* form layer krestpattern.png */
-#layer_wrap, #box_layer_wrap {
+#layer_wrap, #box_layer_wrap, #wk_layer_wrap 
+{
   background: rgba(05,10,0, 0.85) url(http://i51.fastpic.ru/big/2013/0322/ec/864fdbdf98367780a3b8dd0b94d9a8ec.png) !important;
 } 
 
+/* Buttons */
+.videos_row a.quality,.group1 ,.button_blue button , .summary_tab_sel .summary_tab2, .summary_tab_sel .summary_tab2:hover ,
+.selector_container table.selector_table, .docs_choose_def_icon, div.wdd, .dialogs_new_msg, .medadd_c_polladd, .button_blue ,
+.page_members_box .member_row .actions a , #feed_searchext_map 
+{   
+  border: 1px solid #282 !important;
+  background-color: #242 !important; 
+  color: #2F2 !important;
+}
+
 /* Elements - passiv, heads, bottoms */
 #wk_buttons_panel , .wk_page_title_cont ,#wke_buttons, #graffiti_bottombar , .box_body .search_bar , .choose_search_cont .search_bar , .choose_more_btn ,
+div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdown .l_header div, .apps_i_panel, .apps_main , .apps_i_policy ,
 .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about , #mail_bar, .pv_comment , .wk_extpage_head_wrap , .wk_extpage_footer_wrap,
 .module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom , .invited_box , .info_msg ,.box_title, .choose_header ,
 .tabs, #profile_full_info h4 b, .wl_owner_head_wrap, .rate_right, #pad_title_wrap , .bd_calendar_header ,.photos_no_content , #photos_choose_more ,
@@ -77,12 +89,14 @@ a
 { background-color: #131b15 !important; }
 
 /* Elements - activ */
+#privacy_dropdown .item, #privacy_dropdown .item_sel, #privacy_dropdown .item_sel_plus , .apps_i_cont,
+#privacy_dropdown .l_header div, #privacy_dropdown .l_item, #privacy_dropdown .l_item_sel,
 .wddi, .wall_tt .bottom , #friends .info_msg ,#feed_recom_more ,.docs_empty , .preq_wrap , #choose_map .place_search_bar,
 #search_query_wrap, #docs_choose_more, #im_sound_controls, #pd, .fc_tab_txt, .rate_left, .post_like, .post_share, .search, .dark_box_cont ,
 #albums_load_more, #profile_editor, .page_actions a, .app_search, #group_like_module, .mail_envelope ,  .invite_box, .invite_box .about,
-.side_filter, #feed_bar, #pva_more_photos, #pvsa_more_photos, .video_search, .video_albums_show_more ,
+.side_filter, #feed_bar, #pva_more_photos, #pvsa_more_photos, .video_search, .video_albums_show_more , .groups_inv_cont,
 #photos_upload_area, #im_bar, .groups_list_search, .wr_header, .replies_open, .reply_fakebox, #settings_panel, .settings_privacy,
-#ts_cont_wrap, #profile_bottom_actions a ,.flist_search_cont , .groups_no_list , #profile_photos_upload, #intr_tt ,
+#ts_cont_wrap, #profile_bottom_actions a ,.flist_search_cont , .groups_no_list , #profile_photos_upload, #intr_tt ,.tb_tabs,
 .summary_tabs, .docs_side_panel, #settings_panel .msg, .msg, .box_msg, .im_write
 { background-color: #080D08 !important;}
 
@@ -99,25 +113,17 @@ a
 
 /* Selected */
 .im_sel_row .im_log_author, .im_sel_row .im_log_body, .im_sel_row .im_log_date, .im_sel_row , .bd_day_cell.today,
-.wke_b_active 
+.wke_b_active , #privacy_dropdown .l_item_sel
 { background-color: #530 !important; }
 
 /* Highlighted */
+
 #docs_choose_upload_area, .left_count_wrap, .feedback_row_answer_wrap, #mail_rows_t tr.new_msg, #dark_box_topic_wrap,
 .selector_container td.selector_dropdown, .selector_container td.selector, #ac, .post_upload_dropbox_inner,
 #ts_cont_wrap a.ts_contact.active,.pad_msga, .pad_nwsa ,.fc_clist_inner, .add_media_item, .add_media_head,
 .im_tab_selected .im_tab2,   #im_resizer_wrap ,.wdd_add2 , #public #subscribe, #public #unsubscribe, #public #unshare,
-#public .like_module ,.login_m_vk_com, .apps_section_act ,#graffiti_wrapper ,#graffiti_topbar , 
+#public .like_module ,.login_m_vk_com, .apps_section_act ,#graffiti_wrapper ,#graffiti_topbar ,  #group_photos_upload,
  
-/* Buttons */
-.videos_row a.quality,.group1 ,.button_blue button , .summary_tab_sel .summary_tab2, .summary_tab_sel .summary_tab2:hover ,
-.selector_container table.selector_table, .docs_choose_def_icon, div.wdd, .dialogs_new_msg, .medadd_c_polladd
-{
-  border-color: #224 !important;
-  background-color: #121 !important; 
-  color: #2F2 !important; 
-}
-
 /* Inputs, forms */
 .wke_cont ,#graffiti_cpwrap , #photos_choose_upload_area ,
 .wall_module #submit_post_box, iframe, .token , .wall_tt .wrap, .bp_tt_wrap, .mott_wrap, .verified_tt_wrap, .gifts_tt_wrap ,
@@ -137,6 +143,7 @@ input.text, input.search, textarea, input.big_text, .audio_filter, #audio_more_f
 { border: none !important; }
 
 /* Border recolor */
+.apps_i_policy , .apps_i_cont ,h2 , .apps_i_panel, .apps_options_bar ,
 div.ts_input_wrap, div.ts, .wall_tt .bottom ,.flist_search_cont ,.flist_col , #im_footer_sh, .im_add_row td, #im_footer_sh,
 #wrap1, #wrap2, .reply_field_wrap, .pedit_separator_bottom,  #mail_bar,.pv_comment ,  .mail_envelope , .dialogs_row,
 .pedit_privacy_padding_fix,.pedit_controls_separator, .separator div, .separator, .summary_tabs, .reply, .docs_item, .post, .more_div,
@@ -155,7 +162,7 @@ div.ts_input_wrap, div.ts, .wall_tt .bottom ,.flist_search_cont ,.flist_col , #i
 { border: 1px solid !important; }
 
 /* Active border */
-.side_filter ,#pad_title_wrap, #pad_title, .button_blue button , .im_tab_selected .im_tab2 , .im_resizer , .box_title_wrap ,.box_title ,
+.side_filter ,#pad_title_wrap, #pad_title, .im_tab_selected .im_tab2 , .im_resizer , .box_title_wrap ,.box_title ,
 .apps_section_act , .apps_cat_section , .medadd_c_polladd
 { border-color: #383 !important; }
 
@@ -179,7 +186,7 @@ ul.t0 li a:hover,ul.t0 li a:hover b.tl1, ul.t0 li a:hover b.tl2,.round_tab.visib
 .wall_module #wall_postponed_link:hover, .wrh_all:hover, .wall_module a.page_media_thumbed_link:hover,  .add_media_item:hover, a.choose:hover, 
 .choose_more_btn:hover,  .other_acts a:hover, .page_actions a:hover, .member_list_more_link:hover, .page_members_box .member_row .actions a:hover, 
 .replies_open:hover,  .tickets_faq_row.over, .feedback_row_clickable_over1, .feedback_row_clickable_over2, .feedback_row_clickable_over3, 
-.payments_getvotes_method_opt:hover, #payments_getvotes_method .payments_getvotes_active_row,
+.payments_getvotes_method_opt:hover, #payments_getvotes_method .payments_getvotes_active_row, div#wl_post_actions_wrap a.wl_post_action_link:hover,
 .audio.over .area, .tu_last:hover, #tis_cancel_lnk:hover, #support_admin_moderators .support_admin_moderators_row:hover td, .tu_last:hover ,
 #support_admin_specagents .support_admin_specagents_row:hover td, .tickets_subtab1:hover, #tickets_pass_btn:hover, .tickets_box_close:hover, 
 .tickets_next_link:hover, #support_admin_moderators .detailed td , #tickets_content .paginated_table_header th.paginated_table_cell:hover, 
@@ -191,7 +198,9 @@ a.tickets_question_row_tt:hover, .tickets_block_link:hover, #results a.sub_item.
 #audio.new .audio.current.over .area, a.fc_contact_over, .fc_scrollbar_cont.scrollbar_c_overed, .fmenu_item_over, .left_nav_over .left_count_pad .left_count_wrap,
 .side_filter_over, .fmenu_item_over, .wddi_over, .replies_side_over, .dropbox_over .post_upload_dropbox_inner,.friends_act:hover,  
 #results .three_col_row .actions a:hover, .audios_row .actions a:hover , .page_members_box .member_row .actions a:hover, 
-.im_tab_over .im_tab2, .dialogs_row_over, .dialogs_row_over .dialogs_new_msg,  .im_friend_over,  a.im_find_in_mail.im_friend_over, #choose_audio a.choose:hover
+.im_tab_over .im_tab2, .dialogs_row_over, .dialogs_row_over .dialogs_new_msg,  .im_friend_over,  a.im_find_in_mail.im_friend_over, #choose_audio a.choose:hover,
+div#wl_post_actions_wrap a.wl_post_action_link:hover, 
+#privacy_dropdown .l_item:hover, #privacy_dropdown .l_item_sel:hover
 { background-color: #131 !important; }
 
 /*.cur_section
@@ -226,7 +235,7 @@ body *
 /* ======== ICONS ======== */
 
 /* camera.png camera.gif */
-.photos_upload_area_img, #photos_choose_upload_area_label , .profile_photos_upload_label
+.photos_upload_area_img, #photos_choose_upload_area_label , .profile_photos_upload_label, .group_photos_upload_label 
 { background-image: url(http://i52.fastpic.ru/big/2013/0322/bf/8284fe6ffb994bc9667b9720e74eccbf.png) !important; }
 
 /* magglass.png */
