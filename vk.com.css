@@ -6,7 +6,31 @@
   {
    background: #000 !important; color: #EEE !important;
   }
-  
+  .button_blue button {
+    background-image: none !important;
+    }
+/* magglass.png */
+.tdd_search .tdd_control 
+{  
+background-image: url(http://i54.fastpic.ru/big/2013/0322/cc/08326483452607e82cc71738a6bc09cc.png) !important;
+}
+/* no statusx.gif  */
+#friends .delete_row div 
+{
+  background-image: url(http://i54.fastpic.ru/big/2013/0322/d6/4bd3805588ecda6db88aabc5290cb6d6.png) !important;
+}
+ /* hide_left.gif  */
+#invite_hint_close, .left_hide, .left_hide_button
+{
+  background-image: url(http://i54.fastpic.ru/big/2013/0322/34/d0bfb3f8bc0d03f6f34a9ecfd50eaa34.png) !important;
+}
+
+  /* boxicon_vk.gif  */
+.box_x_button
+{
+  background-image: url(http://i52.fastpic.ru/big/2013/0322/9d/d10bc2b4e414193a8d3bca5b03c8ce9d.png) !important;
+}
+
   /* hat.gif */
   #page_header .left, #page_header .right
   {
@@ -30,7 +54,19 @@
   {
     background-image: url(http://i52.fastpic.ru/big/2013/0321/09/773e43df7a8c676c93ea413935754209.gif) !important;
   }
-  
+/* tooltip_arrow_white.png */
+.wall_tt .toup1 .bottom_pointer, .mobile_tt .toup1 .bottom_pointer, .verified_tt .toup1 .bottom_pointer, .gifts_tt .toup1 .bottom_pointer,
+.board_tt .toup1 .bottom_pointer, .search_adult_tt table.toup1 .bottom_pointer, .feedback_ownreply_tt table.toup1 .bottom_pointer
+{
+  background-image: url(http://i54.fastpic.ru/big/2013/0322/a7/6dd8d469055e84715370d852e548a5a7.png) !important;
+}
+/* backlink.gif */
+
+.page_app_run_arr, #top_back_link, .page_app_run_arr
+{
+  background-image: url(http://i52.fastpic.ru/big/2013/0322/0e/e5f2122ad0008f379ebf86b13c5cc10e.gif) !important;
+}
+
 /**** mono_iconset.gif ****/
 .mail_attach_video, .mail_attach_audio, .mail_attach_mail, .mail_attach_doc, .mail_attach_geo, .mail_attach_wall, .mail_attach_gift, .mail_attach_photo ,
 .medadd_h,.medadd_c_pollh, .current_audio, .profile_rate_warning .warning_row .img,
@@ -55,7 +91,7 @@ b.feed_tp_icon,b.feed_nt_icon, .fc_msg_att_icon_photo,.fc_msg_att_icon_video,.fc
 }
 
 /**** input_clear.gif ****/
-#feed_query_reset, #choose_video .search_reset, .audio_search .search_reset
+#feed_query_reset, #choose_video .search_reset, .audio_search .search_reset, #friends_reset_search 
 {
   background-image: url(http://i51.fastpic.ru/big/2013/0321/ea/5f4d0c574c799176d7d164032d4460ea.gif) !important;
 }
@@ -71,6 +107,28 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 {
   background-image: url(http://i52.fastpic.ru/big/2013/0321/94/105f4349b06afa8fa139b123084edb94.png) !important;
 }
+/* im_smile_cross.png */
+.im_smile_icon_on, .im_smile_icon
+{
+  background-image: url(http://i52.fastpic.ru/big/2013/0322/08/6c061f11e5378cdb5856251e89eb6608.png) !important;
+}
+
+/* ddtooltip.png */
+
+.im_submit_tail, .im_switch_notify_pointer, .flist_tt_tail, .vcall_tt_pointer, .feed_side_tt_pointer
+{
+  background-image: url(http://i52.fastpic.ru/big/2013/0322/a2/82dc1bc52634d0a6d04983a2820e1ca2.png) !important;
+}
+
+/* tooltip_arrow_up.gif */
+.feedback_ownreply_tt table.toup .top_pointer, .wall_tt .toup .top_pointer, .invite_tt table.toup .top_pointer, 
+.preq_tt .top_pointer, .search_adult_tt table.toup .top_pointer, .feedback_ownreply_tt table.toup .top_pointer, 
+.mobile_tt .toup .top_pointer, .verified_tt .toup .top_pointer, .gifts_tt .toup .top_pointer, .board_tt .toup .top_pointer
+{
+  background-image: url(http://i53.fastpic.ru/big/2013/0322/f2/b7475e10504e2aba32fc6a048a57ebf2.gif) !important;
+}
+
+
 /**** Audio icons ****/
 .feed_tab_settings nobr,
 #audio.new .audio.current .play_new, #head_play_btn, .medadd_aud_play, #head_play_btn, 
@@ -92,8 +150,11 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
   {
     color: #F82 !important;
   }
-
-  #audio.new .actions, div.ts_input_wrap,
+#friends .delete_row div, .box_x_button 
+   {
+    background-color: transparent !important; 
+  }
+  #audio.new .actions, div.ts_input_wrap,#settings_addr_table ,#settings_bl_bar ,
   #page_wrap, #side_bar, #side_bar ol li .left_row, .back, .app_notify_row.new ,
   .search_results td.results, .search_results, .search_table, .search_table td.results,
   .bp_post, .feed_row, #profile_actions a, .mail_message , 
@@ -107,42 +168,52 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
   /**** Passives ****/
   .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about , #mail_bar, .pv_comment , 
   .module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom ,
-  .tabs, #profile_full_info h4 b, .wl_owner_head_wrap, .rate_right, 
-  .settings_view_as_text, #new_ticket, .pd_apps_summary, .pd_apps_header,
+  .tabs, #profile_full_info h4 b, .wl_owner_head_wrap, .rate_right, #pad_title_wrap , .bd_calendar_header ,
+  .settings_view_as_text, #new_ticket, .pd_apps_summary, .pd_apps_header, .box_title_wrap ,
   #pad_footer, .docs_search_bar, .apps_cat_filter, .app_tabs.t_bar, .side_panel, .box_controls, .bt_header,
-  #im_footer_filler, .im_new_msg .im_log_author, .im_new_msg .im_log_body, .fc_tab ,
+  #im_footer_filler, .im_new_msg .im_log_author, .im_new_msg .im_log_body, .fc_tab ,.group1, .group2, .group3, .group4, .group5, .group6, .group7, .group8, .group9, .group10,
   .im_new_msg .im_log_date, #apps_wall_post_header, .im_editable, .wl_post_reply_form_forbidden
   {
     background-color: #131b15 !important; 
   }
 
   /**** Actives ****/
-  .wddi, 
+  .wddi, .wall_tt .bottom , #friends .info_msg ,
   #search_query_wrap, #docs_choose_more, #im_sound_controls, #pd, .fc_tab_txt, .rate_left, .post_like, .post_share, .search, .dark_box_cont ,
   #albums_load_more, #profile_editor, .page_actions a, .app_search, #group_like_module, .mail_envelope , 
   .side_filter, #feed_bar, #pva_more_photos, #pvsa_more_photos, .video_search, .video_albums_show_more ,
   #photos_upload_area, #im_bar, .groups_list_search, .wr_header, .replies_open, .reply_fakebox, #settings_panel, .settings_privacy,
-  #ts_cont_wrap, 
+  #ts_cont_wrap, #profile_bottom_actions a ,.flist_search_cont ,
   .summary_tabs, .docs_side_panel, #settings_panel .msg, .msg, .box_msg, .im_write
   {
     background-color: #080D08 !important; 
   }
 
   /**** Float window ****/
-  #wk_box, #pv_box, #pad_cont, .fc_tab_log , #stl_bg, #fc_contacts, .box_body , #pv_actions .left, #pv_actions .right
+  #wk_box, #pv_box, #pad_cont, .fc_tab_log , #stl_bg, #fc_contacts, .box_body , #pv_actions .left, #pv_actions .right, .bd_day_cell
   {
     background-color: #080808 !important; 
   }
-  /**** Unread ****/
-  .fc_msgs_unread, .fc_msg_unread 
+  /**** Visually marked ****/
+  .left_box , .bd_day_cell.holiday ,
+  .fc_msgs_unread, .fc_msg_unread , .im_del_row, .im_del_row td, #main_feed .post .match , #mail_rows .match,  #results.highlight .match ,
+  .ads_row .match
   {
     background-color: #220 !important; 
   }
+  
+  /**** Selected ****/
+  .im_sel_row .im_log_author, .im_sel_row .im_log_body, .im_sel_row .im_log_date, .im_sel_row , .bd_day_cell.today
+  {
+    background-color: #530 !important; 
+  }
+
   /**** Highlighted ****/
   #docs_choose_upload_area, .left_count_wrap, .feedback_row_answer_wrap, #mail_rows_t tr.new_msg, #dark_box_topic_wrap,
   .selector_container td.selector_dropdown, .selector_container td.selector, #ac, .post_upload_dropbox_inner,
   #ts_cont_wrap a.ts_contact.active,.pad_msga, .pad_nwsa ,.fc_clist_inner, .add_media_item, .add_media_head,
-
+  .im_tab_selected .im_tab2,   #im_resizer_wrap ,.wdd_add2 ,
+.videos_row a.quality,.group1 ,.button_blue button , .summary_tab_sel .summary_tab2, .summary_tab_sel .summary_tab2:hover ,
   .selector_container table.selector_table, .docs_choose_def_icon, div.wdd, .dialogs_new_msg
   {
     border-color: #224 !important;
@@ -151,9 +222,10 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
   }
 
   /***** Forms *****/
-  .wall_module #submit_post_box, iframe, .token , 
-  .box_body, .mail_box_cont, .fc_clist_filter_wrap, #im_resizer_wrap, .actions, #mv_controls,
+  .wall_module #submit_post_box, iframe, .token , .wall_tt .wrap, .bp_tt_wrap, .mott_wrap, .verified_tt_wrap, .gifts_tt_wrap ,
+  .box_body, .mail_box_cont, .fc_clist_filter_wrap, .actions, #mv_controls,
   .wall_module .reply_fakebox_wrap, #wl_reply_form_inner, #im_peer_controls_wrap,
+  .tt .tt_text , 
   .wall_module .reply_fakebox, .tdd_search .tdd_control, #fmenu, .docs_add_new, .docs_item_icon , .tdd_tag,
   input.text, input.search, textarea, input.big_text, .audio_filter, #audio_more_friends, .reply_box
   {
@@ -161,10 +233,15 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
     background-color: #080D08 !important; 
     border:1px dashed #333 !important; 
   }
+#im_submit_hint_opts .radiobtn , .bd_header_info , .bd_header_month, .bd_day_cell.today .bd_day_text,
+.summary_tab_sel .summary_tab3 
+  {
+    color: #2F2 !important; 
+  }
 
 
   /**** Border recolor ****/
-  div.ts_input_wrap, div.ts,
+  div.ts_input_wrap, div.ts, .wall_tt .bottom ,.flist_search_cont ,.flist_col , #im_footer_sh, .im_add_row td, #im_footer_sh,
   #wrap1, #wrap2, .reply_field_wrap, .pedit_separator_bottom,  #mail_bar,.pv_comment ,  .mail_envelope , .dialogs_row,
   .pedit_privacy_padding_fix,.pedit_controls_separator, .separator div, .separator, .summary_tabs, .reply, .docs_item, .post, .more_div,
   .left_friend_all_link, .left_app_all_link, h4, .wall_module .post, #docs_search_summary_cont, .docs_side_panel,
@@ -176,6 +253,11 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
   #unions_navigation.ads_unions_navigation_about , #all_shown, #feed_wall .feed_reposts_more_link
   {
     border-color: #333 !important; 
+  }
+    /**** Active border recolor ****/
+  .side_filter ,#pad_title_wrap, #pad_title, .button_blue button , .im_tab_selected .im_tab2 , .im_resizer , .box_title_wrap ,.box_title 
+  {
+    border-color: #383 !important; 
   }
   /**** Hovers ****/
   .pd_game_search_row:hover, #pad_more_audio:hover, #pad_more:hover, .pad_im_d:hover, .pad_im_dnew, .search_subtab1:hover, .audios_row .actions a:hover, .sgedit_action:hover, #results .three_col_row .actions a:hover, #show_more_link:hover, #show_media_link:hover, a#profile_photos_upload:hover, .profile_rate_warning .warning_row:hover, .profile_info_link:hover, 
@@ -191,7 +273,7 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 .wall_module a.page_media_thumbed_link:hover,  .add_media_item:hover, a.choose:hover,
 .choose_more_btn:hover,  .other_acts a:hover, .page_actions a:hover, .member_list_more_link:hover,
 .page_members_box .member_row .actions a:hover, .replies_open:hover, 
-
+.feedback_row_clickable_over1, .feedback_row_clickable_over2, .feedback_row_clickable_over3,
 
 #results a.sub_item.over, #pad_playlist .audio.over .area, #pad_playlist .audio.tab_current .area,
 #pad_playlist .audio.tab_current.tt_shown .area, #pad_playlist .audio.tab_current.over .area, #pad_playlist .audio.rec_source .area, 
@@ -201,8 +283,8 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 #audio.new .audio.current .area, #audio.new .audio.current.tt_shown .area, #audio.new .audio.current.over .area, 
 a.fc_contact_over, .fc_scrollbar_cont.scrollbar_c_overed,
 .fmenu_item_over, .left_nav_over .left_count_pad .left_count_wrap, .side_filter_over, .fmenu_item_over, 
-.wddi_over, .replies_side_over, .dropbox_over .post_upload_dropbox_inner, 
-
+.wddi_over, .replies_side_over, .dropbox_over .post_upload_dropbox_inner,.friends_act:hover,  
+#results .three_col_row .actions a:hover, .audios_row .actions a:hover , .page_members_box .member_row .actions a:hover , 
 .im_tab_over .im_tab2, .dialogs_row_over, .dialogs_row_over .dialogs_new_msg,  .im_friend_over,  a.im_find_in_mail.im_friend_over, 
 
 #choose_audio a.choose:hover
