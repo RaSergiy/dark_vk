@@ -166,7 +166,7 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
   }
 
   /**** Passives ****/
-  .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about , #mail_bar, .pv_comment , 
+  .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about , #mail_bar, .pv_comment , .wk_extpage_head_wrap , .wk_extpage_footer_wrap,
   .module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom ,
   .tabs, #profile_full_info h4 b, .wl_owner_head_wrap, .rate_right, #pad_title_wrap , .bd_calendar_header ,
   .settings_view_as_text, #new_ticket, .pd_apps_summary, .pd_apps_header, .box_title_wrap ,
@@ -190,6 +190,7 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
   }
 
   /**** Float window ****/
+  #profile_full_info h4 a.fl_r,
   #wk_box, #pv_box, #pad_cont, .fc_tab_log , #stl_bg, #fc_contacts, .box_body , #pv_actions .left, #pv_actions .right, .bd_day_cell
   {
     background-color: #080808 !important; 
@@ -274,7 +275,7 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 .choose_more_btn:hover,  .other_acts a:hover, .page_actions a:hover, .member_list_more_link:hover,
 .page_members_box .member_row .actions a:hover, .replies_open:hover, 
 .feedback_row_clickable_over1, .feedback_row_clickable_over2, .feedback_row_clickable_over3,
-
+.audio.over .area,
 #results a.sub_item.over, #pad_playlist .audio.over .area, #pad_playlist .audio.tab_current .area,
 #pad_playlist .audio.tab_current.tt_shown .area, #pad_playlist .audio.tab_current.over .area, #pad_playlist .audio.rec_source .area, 
 #pad_playlist .audio.rec_source.tt_shown .area, #pad_playlist .audio.rec_source.over .area, #pad_playlist .audio.over .duration, 
