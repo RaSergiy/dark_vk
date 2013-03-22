@@ -1,4 +1,4 @@
-/* VSekte-0.2.5 theme for the http://vk.com (V kontakte) */
+/* VSekte-0.2.6 theme for the http://vk.com (V kontakte) */
 
 @-moz-document domain(vk.com) 
 { 
@@ -6,7 +6,7 @@
 /* ======== Major styles ======== */
 
 body
-{ background: #000 !important; }
+{ background: #000 !important;  }
 
 /* Base text */
 body, #content
@@ -26,7 +26,7 @@ a
 
 /* Active text */
 #im_submit_hint_opts .radiobtn , .bd_header_info , .bd_header_month, .bd_day_cell.today .bd_day_text,
-.summary_tab_sel .summary_tab3 ,.im_tab_selected .im_tab3 
+.summary_tab_sel .summary_tab3 ,.im_tab_selected .im_tab3 , #graffiti_bottombar 
 { color: #2F2 !important; }
 
 /* Deleted */  
@@ -45,7 +45,7 @@ a
 { display: none !important; }
 
 /* Transparent elements */
-#friends .delete_row div, .box_x_button 
+#friends .delete_row div, #choose_audio.audio_search, #choose_video.video_search_wrap 
 { background-color: transparent !important; }
 
 /* No background */
@@ -66,17 +66,18 @@ a
 } 
 
 /* Elements - passiv, heads, bottoms */
+#wk_buttons_panel , .wk_page_title_cont ,#wke_buttons, #graffiti_bottombar , .box_body .search_bar , .choose_search_cont .search_bar , .choose_more_btn ,
 .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about , #mail_bar, .pv_comment , .wk_extpage_head_wrap , .wk_extpage_footer_wrap,
-.module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom , .invited_box , .info_msg ,
-.tabs, #profile_full_info h4 b, .wl_owner_head_wrap, .rate_right, #pad_title_wrap , .bd_calendar_header ,.photos_no_content ,
-.settings_view_as_text, #new_ticket, .pd_apps_summary, .pd_apps_header, .box_title_wrap ,.login_mobile_sms_wrap,.apps_recent_more ,
+.module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom , .invited_box , .info_msg ,.box_title, .choose_header ,
+.tabs, #profile_full_info h4 b, .wl_owner_head_wrap, .rate_right, #pad_title_wrap , .bd_calendar_header ,.photos_no_content , #photos_choose_more ,
+.settings_view_as_text, #new_ticket, .pd_apps_summary, .pd_apps_header, .box_title_wrap ,.login_mobile_sms_wrap,.apps_recent_more , .full_wall_tabs ,
 #pad_footer, .docs_search_bar, .apps_cat_filter, .app_tabs.t_bar, .side_panel, .box_controls, .bt_header,.preq_bottom , #payments_box_summary ,#im_footer_filler, 
 .im_new_msg .im_log_author, .im_new_msg .im_log_body, .fc_tab, .group1, .group2, .group3, .group4, .group5, .group6, .group7, .group8, .group9, .group10,
 .im_new_msg .im_log_date, #apps_wall_post_header, .im_editable, .wl_post_reply_form_forbidden, #join_school_next, #join_university_next
 { background-color: #131b15 !important; }
 
 /* Elements - activ */
-.wddi, .wall_tt .bottom , #friends .info_msg ,#feed_recom_more ,.docs_empty , .preq_wrap ,
+.wddi, .wall_tt .bottom , #friends .info_msg ,#feed_recom_more ,.docs_empty , .preq_wrap , #choose_map .place_search_bar,
 #search_query_wrap, #docs_choose_more, #im_sound_controls, #pd, .fc_tab_txt, .rate_left, .post_like, .post_share, .search, .dark_box_cont ,
 #albums_load_more, #profile_editor, .page_actions a, .app_search, #group_like_module, .mail_envelope ,  .invite_box, .invite_box .about,
 .side_filter, #feed_bar, #pva_more_photos, #pvsa_more_photos, .video_search, .video_albums_show_more ,
@@ -86,18 +87,19 @@ a
 { background-color: #080D08 !important;}
 
 /* Float window */
-#profile_full_info h4 a.fl_r,
+#profile_full_info h4 a.fl_r,#graffiti_gwrap ,
 #wk_box, #pv_box, #pad_cont, .fc_tab_log , #stl_bg, #fc_contacts, .box_body , #pv_actions .left, #pv_actions .right, .bd_day_cell
 { background-color: #080808 !important; }
 
 /* Visually marked */
 .left_box , .bd_day_cell.holiday , .top_info_bar,
 .fc_msgs_unread, .fc_msg_unread , .im_del_row, .im_del_row td, #main_feed .post .match , #mail_rows .match,  #results.highlight .match ,
-.ads_row .match
+.ads_row .match, .wke_b:hover.wke_b_down
 { background-color: #220 !important; }
 
 /* Selected */
-.im_sel_row .im_log_author, .im_sel_row .im_log_body, .im_sel_row .im_log_date, .im_sel_row , .bd_day_cell.today
+.im_sel_row .im_log_author, .im_sel_row .im_log_body, .im_sel_row .im_log_date, .im_sel_row , .bd_day_cell.today,
+.wke_b_active 
 { background-color: #530 !important; }
 
 /* Highlighted */
@@ -105,11 +107,11 @@ a
 .selector_container td.selector_dropdown, .selector_container td.selector, #ac, .post_upload_dropbox_inner,
 #ts_cont_wrap a.ts_contact.active,.pad_msga, .pad_nwsa ,.fc_clist_inner, .add_media_item, .add_media_head,
 .im_tab_selected .im_tab2,   #im_resizer_wrap ,.wdd_add2 , #public #subscribe, #public #unsubscribe, #public #unshare,
-#public .like_module ,.login_m_vk_com, .apps_section_act ,
+#public .like_module ,.login_m_vk_com, .apps_section_act ,#graffiti_wrapper ,#graffiti_topbar , 
  
 /* Buttons */
 .videos_row a.quality,.group1 ,.button_blue button , .summary_tab_sel .summary_tab2, .summary_tab_sel .summary_tab2:hover ,
-.selector_container table.selector_table, .docs_choose_def_icon, div.wdd, .dialogs_new_msg
+.selector_container table.selector_table, .docs_choose_def_icon, div.wdd, .dialogs_new_msg, .medadd_c_polladd
 {
   border-color: #224 !important;
   background-color: #121 !important; 
@@ -117,6 +119,7 @@ a
 }
 
 /* Inputs, forms */
+.wke_cont ,#graffiti_cpwrap , #photos_choose_upload_area ,
 .wall_module #submit_post_box, iframe, .token , .wall_tt .wrap, .bp_tt_wrap, .mott_wrap, .verified_tt_wrap, .gifts_tt_wrap ,
 .box_body, .mail_box_cont, .fc_clist_filter_wrap, .actions, #mv_controls, .wall_module .reply_fakebox_wrap, #wl_reply_form_inner, 
 #im_peer_controls_wrap,.tt .tt_text , .wall_module .reply_fakebox, .tdd_search .tdd_control, #fmenu, .docs_add_new, .docs_item_icon , .tdd_tag,
@@ -153,25 +156,25 @@ div.ts_input_wrap, div.ts, .wall_tt .bottom ,.flist_search_cont ,.flist_col , #i
 
 /* Active border */
 .side_filter ,#pad_title_wrap, #pad_title, .button_blue button , .im_tab_selected .im_tab2 , .im_resizer , .box_title_wrap ,.box_title ,
-.apps_section_act , .apps_cat_section 
+.apps_section_act , .apps_cat_section , .medadd_c_polladd
 { border-color: #383 !important; }
 
 
 /* Hovers */
 .pd_game_search_row:hover, #pad_more_audio:hover, #pad_more:hover, .pad_im_d:hover, .pad_im_dnew, .search_subtab1:hover, .audios_row 
 .actions a:hover, .sgedit_action:hover, #results .three_col_row .actions a:hover, #show_more_link:hover, #show_media_link:hover, 
-a#profile_photos_upload:hover, .profile_rate_warning .warning_row:hover, .profile_info_link:hover, 
-#profile_groups_link:hover, #profile_groups .more_link:hover, #profile_actions a:hover, #profile_bottom_actions a:hover, 
+a#profile_photos_upload:hover, .profile_rate_warning .warning_row:hover, .profile_info_link:hover,  .wke_b_disabled:hover,
+#profile_groups_link:hover, #profile_groups .more_link:hover, #profile_actions a:hover, #profile_bottom_actions a:hover,  .wke_b:hover,
 .pv_filter_custom_block:hover, #pv_place_more:hover,  #pva_more:hover, #pva_more_photos:hover, #pva_more_videos:hover, #pvsa_more_photos:hover, 
 .pv_can_edit:hover, #pv_actions a:hover, .dd_menu_rows a:hover, .dd_menu_rows a.dd_a_hover, #albums_load_more:hover, .photos_edit_action:hover,
 #photos_choose_thumb_more:hover, #photos_load_more:hover, a#photos_upload_area:hover, #photos_upload_area.hover, #photos_album_area:hover, 
 #photos_choose_upload_area:hover, #photos_choose_more:hover, .flist_cell:hover, .flist_more:hover,  #privacy_dropdown .l_item:hover, 
 #privacy_dropdown .l_item_sel:hover,  .scrollbar_inner:hover, .scrollbar_hovered, a.olist_more:hover, 
 .audio_table a.more:hover, .audio_add_new:hover, .audio_friend:hover, .audio_list .actions a:hover, #audio_more_friends:hover, #audio_more_friends:hover,
-#side_bar ol li .left_row:hover, tl_active.over_fast #stl_bg, .button_cancel .button_hover, 
+#side_bar ol li .left_row:hover, tl_active.over_fast #stl_bg, .button_cancel .button_hover, #docs_choose_upload_area:hover,
 .button_cancel .button:hover, .button_cancel .button.hover, .button_cancel .leave_button:hover, .summary_tab2:hover,
 ul.t0 li a:hover,ul.t0 li a:hover b.tl1, ul.t0 li a:hover b.tl2,.round_tab.visible,.round_tab:hover, .bnav_a:hover,
-#profile_actions a:hover, #profile_bottom_actions a:hover, .wall_module a.page_media_thumbed_link:hover, 
+#profile_actions a:hover, #profile_bottom_actions a:hover, .wall_module a.page_media_thumbed_link:hover, .docs_choose_over_row ,
 .add_media_item:hover, .counts_module div a:hover,  .topics_module .topic_to_last:hover, .wall_module .more_link:hover, 
 .wall_module #wall_postponed_link:hover, .wrh_all:hover, .wall_module a.page_media_thumbed_link:hover,  .add_media_item:hover, a.choose:hover, 
 .choose_more_btn:hover,  .other_acts a:hover, .page_actions a:hover, .member_list_more_link:hover, .page_members_box .member_row .actions a:hover, 
@@ -239,8 +242,8 @@ body *
 { background-image: url(http://i54.fastpic.ru/big/2013/0322/34/d0bfb3f8bc0d03f6f34a9ecfd50eaa34.png) !important; }
 
 /* boxicon_vk.gif  */
-.box_x_button
-{ background-image: url(http://i52.fastpic.ru/big/2013/0322/9d/d10bc2b4e414193a8d3bca5b03c8ce9d.png) !important; }
+/*.box_x_button
+{ background: #9DB7D4 url(http://i52.fastpic.ru/big/2013/0322/9d/d10bc2b4e414193a8d3bca5b03c8ce9d.png) -23px -2px !important; }*/
 
 /* hat.gif */
 #page_header .left, #page_header .right
@@ -271,7 +274,7 @@ body *
 
 /* mono_iconset.gif */
 .mail_attach_video, .mail_attach_audio, .mail_attach_mail, .mail_attach_doc, .mail_attach_geo, .mail_attach_wall, .mail_attach_gift, .mail_attach_photo ,
-.medadd_h,.medadd_c_pollh, .current_audio, .profile_rate_warning .warning_row .img,
+.medadd_h, .current_audio, .profile_rate_warning .warning_row .img,
 .current_app, .wall_module .media_preview .share b,.wall_module .media_preview .note b,.wall_module .media_preview .poll b,
 .wall_module .media_desc b, .media_doc_icon, .media_audio_icon, .wall_signed_by, .places_module .icon, b.feed_gr_icon,b.feed_ev_icon,
 b.feed_tp_icon,b.feed_nt_icon, .fc_msg_att_icon_photo,.fc_msg_att_icon_video,.fc_msg_att_icon_doc,.fc_msg_att_icon_mail,
@@ -294,8 +297,11 @@ b.feed_tp_icon,b.feed_nt_icon, .fc_msg_att_icon_photo,.fc_msg_att_icon_video,.fc
 
 /* profile_iconset.gif */
 .gifts_list_module a span.thumb,.counts_module div a span.thumb, .profile_verified, 
-.wall_post_source_icon, .page_fronly, .medadd_h,.wall_post_source_icon, .medadd_c_pollh
+.wall_post_source_icon, .page_fronly, .medadd_h,.wall_post_source_icon
 { background-image: url(http://i52.fastpic.ru/big/2013/0321/ec/489feb325004685db95c5664473a99ec.gif) !important; }
+
+.wke_b 
+{ background-image: url(http://i52.fastpic.ru/big/2013/0322/46/c52e225634d96d54e2cdb7ad060acd46.png) !important; }
 
 /* attach_icons.png */
 a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_item
@@ -328,5 +334,10 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 /* download.gif */
 .vk-downloader-audio-new.current .vk-downloader-button
 { background-image: url(http://i52.fastpic.ru/big/2013/0321/d8/d4b846c23f5c373bf3464e4a314729d8.gif) !important;}
+
+/* graffiti_resizer.gif */
+#graffiti_resizer
+{ background-image: url(http://i53.fastpic.ru/big/2013/0322/36/0574b5b0c32630261a8c2eafac569e36.gif) !important;}
+
 
 }
