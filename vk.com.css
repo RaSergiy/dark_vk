@@ -1,4 +1,4 @@
-
+/* VSekte V0.2.4 */
 @-moz-document domain(vk.com) 
 { 
 
@@ -9,6 +9,12 @@
   .button_blue button {
     background-image: none !important;
     }
+    /* camera.png camera.gif */
+    .photos_upload_area_img, #photos_choose_upload_area_label , .profile_photos_upload_label
+    {  
+background-image: url(http://i52.fastpic.ru/big/2013/0322/bf/8284fe6ffb994bc9667b9720e74eccbf.png) !important;
+}
+
 /* magglass.png */
 .tdd_search .tdd_control 
 {  
@@ -159,7 +165,7 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
   .search_results td.results, .search_results, .search_table, .search_table td.results,
   .bp_post, .feed_row, #profile_actions a, .mail_message , 
   .wide_wall_module, ul.t0 a, .side_filter, .audio_friend, #audio.new .audio_search, .audio_search,
-  .reply_field_wrap, .group_list_row, .reply, .photo_row a, .apps_ads_rows,
+  .reply_field_wrap, .group_list_row, .reply, .photo_row a, .apps_ads_rows,#settings_privacy_result, #settings_result ,
   .apps_feed_info_str, .apps_feed_arrow, .wall_fixed .wall_post_text, #info_module_cont, #profile_main_actions
   { 
     background: none !important;
@@ -167,23 +173,24 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 
   /**** Passives ****/
   .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about , #mail_bar, .pv_comment , .wk_extpage_head_wrap , .wk_extpage_footer_wrap,
-  .module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom ,
-  .tabs, #profile_full_info h4 b, .wl_owner_head_wrap, .rate_right, #pad_title_wrap , .bd_calendar_header ,
-  .settings_view_as_text, #new_ticket, .pd_apps_summary, .pd_apps_header, .box_title_wrap ,
-  #pad_footer, .docs_search_bar, .apps_cat_filter, .app_tabs.t_bar, .side_panel, .box_controls, .bt_header,
+  .module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom , .invited_box , .info_msg ,
+  .tabs, #profile_full_info h4 b, .wl_owner_head_wrap, .rate_right, #pad_title_wrap , .bd_calendar_header ,.photos_no_content ,
+  .settings_view_as_text, #new_ticket, .pd_apps_summary, .pd_apps_header, .box_title_wrap ,.login_mobile_sms_wrap,.apps_recent_more ,
+  #pad_footer, .docs_search_bar, .apps_cat_filter, .app_tabs.t_bar, .side_panel, .box_controls, .bt_header,.preq_bottom , #payments_box_summary ,
   #im_footer_filler, .im_new_msg .im_log_author, .im_new_msg .im_log_body, .fc_tab ,.group1, .group2, .group3, .group4, .group5, .group6, .group7, .group8, .group9, .group10,
-  .im_new_msg .im_log_date, #apps_wall_post_header, .im_editable, .wl_post_reply_form_forbidden
+  .im_new_msg .im_log_date, #apps_wall_post_header, .im_editable, .wl_post_reply_form_forbidden, #join_school_next, #join_university_next
   {
     background-color: #131b15 !important; 
   }
 
   /**** Actives ****/
-  .wddi, .wall_tt .bottom , #friends .info_msg ,
+  .wddi, .wall_tt .bottom , #friends .info_msg ,#feed_recom_more ,.docs_empty , .preq_wrap ,
   #search_query_wrap, #docs_choose_more, #im_sound_controls, #pd, .fc_tab_txt, .rate_left, .post_like, .post_share, .search, .dark_box_cont ,
-  #albums_load_more, #profile_editor, .page_actions a, .app_search, #group_like_module, .mail_envelope , 
+  #albums_load_more, #profile_editor, .page_actions a, .app_search, #group_like_module, .mail_envelope ,  .invite_box, .invite_box .about,
   .side_filter, #feed_bar, #pva_more_photos, #pvsa_more_photos, .video_search, .video_albums_show_more ,
   #photos_upload_area, #im_bar, .groups_list_search, .wr_header, .replies_open, .reply_fakebox, #settings_panel, .settings_privacy,
-  #ts_cont_wrap, #profile_bottom_actions a ,.flist_search_cont ,
+  #ts_cont_wrap, #profile_bottom_actions a ,.flist_search_cont , .groups_no_list ,
+#profile_photos_upload, #intr_tt ,
   .summary_tabs, .docs_side_panel, #settings_panel .msg, .msg, .box_msg, .im_write
   {
     background-color: #080D08 !important; 
@@ -196,7 +203,7 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
     background-color: #080808 !important; 
   }
   /**** Visually marked ****/
-  .left_box , .bd_day_cell.holiday ,
+  .left_box , .bd_day_cell.holiday , .top_info_bar,
   .fc_msgs_unread, .fc_msg_unread , .im_del_row, .im_del_row td, #main_feed .post .match , #mail_rows .match,  #results.highlight .match ,
   .ads_row .match
   {
@@ -213,7 +220,10 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
   #docs_choose_upload_area, .left_count_wrap, .feedback_row_answer_wrap, #mail_rows_t tr.new_msg, #dark_box_topic_wrap,
   .selector_container td.selector_dropdown, .selector_container td.selector, #ac, .post_upload_dropbox_inner,
   #ts_cont_wrap a.ts_contact.active,.pad_msga, .pad_nwsa ,.fc_clist_inner, .add_media_item, .add_media_head,
-  .im_tab_selected .im_tab2,   #im_resizer_wrap ,.wdd_add2 ,
+  .im_tab_selected .im_tab2,   #im_resizer_wrap ,.wdd_add2 , #public #subscribe, #public #unsubscribe, #public #unshare,
+  #public .like_module ,.login_m_vk_com, .apps_section_act ,
+ 
+
 .videos_row a.quality,.group1 ,.button_blue button , .summary_tab_sel .summary_tab2, .summary_tab_sel .summary_tab2:hover ,
   .selector_container table.selector_table, .docs_choose_def_icon, div.wdd, .dialogs_new_msg
   {
@@ -226,7 +236,7 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
   .wall_module #submit_post_box, iframe, .token , .wall_tt .wrap, .bp_tt_wrap, .mott_wrap, .verified_tt_wrap, .gifts_tt_wrap ,
   .box_body, .mail_box_cont, .fc_clist_filter_wrap, .actions, #mv_controls,
   .wall_module .reply_fakebox_wrap, #wl_reply_form_inner, #im_peer_controls_wrap,
-  .tt .tt_text , 
+  .tt .tt_text ,  
   .wall_module .reply_fakebox, .tdd_search .tdd_control, #fmenu, .docs_add_new, .docs_item_icon , .tdd_tag,
   input.text, input.search, textarea, input.big_text, .audio_filter, #audio_more_friends, .reply_box
   {
@@ -235,7 +245,7 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
     border:1px dashed #333 !important; 
   }
 #im_submit_hint_opts .radiobtn , .bd_header_info , .bd_header_month, .bd_day_cell.today .bd_day_text,
-.summary_tab_sel .summary_tab3 
+.summary_tab_sel .summary_tab3 ,.im_tab_selected .im_tab3 
   {
     color: #2F2 !important; 
   }
@@ -249,14 +259,20 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
   .summary_wrap, #photos_upload_area, .docs_search_bar, .audio_wrap .main_panel, .docs_filter_sep, .audio_filter_sep,
   .p_header_bottom, .search, #friends .user_block, #friends .main_panel, .groups_list_search, .group_list_row, .wall_module .published_by_quote,
   .mv_cont .narrow_column, .settings_view_as_text, .video_search, .box_controls, .feedback_grouped_row_wrap,
-  .tickets_faq_row, #feed_bar, .im_log_t td, #unions_navigation.ads_unions_navigation_about ,
+  .tickets_faq_row, #feed_bar, .im_log_t td, #unions_navigation.ads_unions_navigation_about , .invite_box .about,
   #unions_navigation.ads_unions_navigation_about .nav ,#unions_navigation a.nav, #unions_navigation .nav_separator ,
-  #unions_navigation.ads_unions_navigation_about , #all_shown, #feed_wall .feed_reposts_more_link
+  #unions_navigation.ads_unions_navigation_about , #all_shown, #feed_wall .feed_reposts_more_link,
+  .login_mobile_sms_wrap, .login_m_vk_com , .info_msg , #join_school_next, #join_university_next
   {
     border-color: #333 !important; 
   }
     /**** Active border recolor ****/
-  .side_filter ,#pad_title_wrap, #pad_title, .button_blue button , .im_tab_selected .im_tab2 , .im_resizer , .box_title_wrap ,.box_title 
+    .apps_cat_section 
+ {
+   border: 1px solid !important; 
+ }
+  .side_filter ,#pad_title_wrap, #pad_title, .button_blue button , .im_tab_selected .im_tab2 , .im_resizer , .box_title_wrap ,.box_title ,
+   .apps_section_act , .apps_cat_section 
   {
     border-color: #383 !important; 
   }
@@ -273,9 +289,15 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 .wall_module .more_link:hover,  .wall_module #wall_postponed_link:hover, .wrh_all:hover,
 .wall_module a.page_media_thumbed_link:hover,  .add_media_item:hover, a.choose:hover,
 .choose_more_btn:hover,  .other_acts a:hover, .page_actions a:hover, .member_list_more_link:hover,
-.page_members_box .member_row .actions a:hover, .replies_open:hover, 
+.page_members_box .member_row .actions a:hover, .replies_open:hover,  .tickets_faq_row.over,
 .feedback_row_clickable_over1, .feedback_row_clickable_over2, .feedback_row_clickable_over3,
-.audio.over .area,
+.payments_getvotes_method_opt:hover,
+#payments_getvotes_method .payments_getvotes_active_row,
+
+.audio.over .area, .tu_last:hover, #tis_cancel_lnk:hover, #support_admin_moderators .support_admin_moderators_row:hover td, .tu_last:hover ,
+#support_admin_specagents .support_admin_specagents_row:hover td, .tickets_subtab1:hover,  #tickets_pass_btn:hover, .tickets_box_close:hover , .tickets_next_link:hover,
+
+#support_admin_moderators .detailed td , #tickets_content .paginated_table_header th.paginated_table_cell:hover, a.tickets_question_row_tt:hover, .tickets_block_link:hover , 
 #results a.sub_item.over, #pad_playlist .audio.over .area, #pad_playlist .audio.tab_current .area,
 #pad_playlist .audio.tab_current.tt_shown .area, #pad_playlist .audio.tab_current.over .area, #pad_playlist .audio.rec_source .area, 
 #pad_playlist .audio.rec_source.tt_shown .area, #pad_playlist .audio.rec_source.over .area, #pad_playlist .audio.over .duration, 
@@ -293,6 +315,7 @@ a.fc_contact_over, .fc_scrollbar_cont.scrollbar_c_overed,
   {
     background-color: #131 !important;
   }
+  
   /**** Deleted ****/  
   .mail_del_row
   {
@@ -312,7 +335,7 @@ a.fc_contact_over, .fc_scrollbar_cont.scrollbar_c_overed,
   { color: #EEE !important; }
 
   /**** Editable text ****/
-  .im_editable, ul.listing li span 
+  .im_editable, ul.listing li span , .tickets_side_tt.title .hint_wrap 
   { color: #8F8 !important; }
 
   .cur_section
@@ -337,6 +360,12 @@ a.fc_contact_over, .fc_scrollbar_cont.scrollbar_c_overed,
     background-color:rgba(0,0,0, 0.9) !important;
     } 
     
+  img.profile_no_ava 
+  {
+   opacity: 0.2 !important;
+  }
+  
+
   .mail_envelope_shadow 
    {
      display: none !important;
