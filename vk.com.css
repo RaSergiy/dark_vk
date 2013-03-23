@@ -1,4 +1,5 @@
-/* VSekte-0.2.9 theme for the http://vk.com (V kontakte) */
+/* VSekte-0.2.10 theme for the http://vk.com (V kontakte)
+   Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
 { 
@@ -78,7 +79,7 @@ a
 
 /* Elements - passiv, heads, bottoms */
 #wk_buttons_panel , .wk_page_title_cont ,#wke_buttons, #graffiti_bottombar , .box_body .search_bar , .choose_search_cont .search_bar , .choose_more_btn ,
-.pvs_header ,#mail_box_topic_wrap ,
+.pvs_header ,#mail_box_topic_wrap ,.docs_panel , #mail_top_msg div ,
 div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdown .l_header div, .apps_i_panel, .apps_main , .apps_i_policy ,
 .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about , #mail_bar, .pv_comment , .wk_extpage_head_wrap , .wk_extpage_footer_wrap,
 .module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom , .invited_box , .info_msg ,.box_title, .choose_header ,
@@ -114,7 +115,13 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 
 /* Selected */
 .im_sel_row .im_log_author, .im_sel_row .im_log_body, .im_sel_row .im_log_date, .im_sel_row , .bd_day_cell.today,
-.wke_b_active , #privacy_dropdown .l_item_sel
+.wke_b_active , #privacy_dropdown .l_item_sel, .audio_list.light div.title_wrap b span,
+.audio_list.light div.title_wrap span.title span,
+#choose_audio_rows.light div.title_wrap b span,
+#choose_audio_rows.light div.title_wrap span.title span ,
+.audio_list.light .audio.current div.title_wrap b span,
+.audio_list.light .audio.current div.title_wrap span.title span 
+
 { background-color: #530 !important; }
 
 /* Highlighted */
@@ -126,7 +133,7 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 #public .like_module ,.login_m_vk_com, .apps_section_act ,#graffiti_wrapper ,#graffiti_topbar ,  #group_photos_upload,
  
 /* Inputs, forms */
-.wke_cont ,#graffiti_cpwrap , #photos_choose_upload_area ,
+.wke_cont ,#graffiti_cpwrap , #photos_choose_upload_area , #mail_box_editable,
 .wall_module #submit_post_box, iframe, .token , .wall_tt .wrap, .bp_tt_wrap, .mott_wrap, .verified_tt_wrap, .gifts_tt_wrap ,
 .box_body, .mail_box_cont, .fc_clist_filter_wrap, .actions, #mv_controls, .wall_module .reply_fakebox_wrap, #wl_reply_form_inner, 
 #im_peer_controls_wrap,.tt .tt_text , .wall_module .reply_fakebox, .tdd_search .tdd_control, #fmenu, .docs_add_new, .docs_item_icon , .tdd_tag,
@@ -320,7 +327,7 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 { background-image: url(http://i52.fastpic.ru/big/2013/0321/94/105f4349b06afa8fa139b123084edb94.png) !important; }
 
 /* im_smile_cross.png */
-.im_smile_icon_on, .im_smile_icon
+.im_smile_icon_on, .im_smile_icon, .mbe_smile_icon_on, .mbe_smile_icon
 { background-image: url(http://i52.fastpic.ru/big/2013/0322/08/6c061f11e5378cdb5856251e89eb6608.png) !important; }
 
 /* ddtooltip.png */
@@ -355,16 +362,38 @@ img.profile_no_ava
 {
 visibility: hidden !important;
 }
-/* koso kommunists x200 */
+/* kosmo kommunists x200 */
 #page_avatar {
  background-image: url(http://i53.fastpic.ru/big/2013/0323/6b/ba2cc650d510d0da26c7a6435bf7fb6b.gif) !important;
+  background-repeat:  no-repeat !important;
 }
+#page_avatar img
+{ 
+  width:200px !important;
+}
+
 .friends_photo_img[src="/images/camera_b.gif"]{
 visibility:hidden !important;
 }
-/* koso kommunists x100 */
+/* kosmo kommunists x100 */
 .friends_bigph_wrap
 {
  background-image: url(http://i54.fastpic.ru/big/2013/0323/75/df32f2bc35bc7af5b104a2f324235c75.gif) !important;
+ background-repeat:  no-repeat !important;
 }
+
+
+/* Dropdown list */
+.dd_menu_rows, .dd_menu_rows a, .result_list ul, .result_list ul li 
+{ background-color: #231b15 !important; color: #F82 !important; }
+
+.dd_menu_header div, .dd_menu_header 
+{ background-color: #231b15 !important; 
+  border: 1px solid #999 !important; 
+  color: #FFF !important;  
 }
+.dd_menu_rows
+{ border: 1px solid #999 !important; }
+
+}
+
