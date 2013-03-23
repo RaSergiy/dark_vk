@@ -1,4 +1,4 @@
-/* VSekte-0.2.8 theme for the http://vk.com (V kontakte) */
+/* VSekte-0.2.9 theme for the http://vk.com (V kontakte) */
 
 @-moz-document domain(vk.com) 
 { 
@@ -221,6 +221,8 @@ div#wl_post_actions_wrap a.wl_post_action_link:hover,
 }
 
 /* ======== Minor fixes ======== */
+#page_header.p_head1 .left 
+{ width: 134px !important;}
 
 /* Shade nil avatar */
 img.profile_no_ava 
