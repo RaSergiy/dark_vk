@@ -1,4 +1,4 @@
-/* VSekte-0.2.7 theme for the http://vk.com (V kontakte) */
+/* VSekte-0.2.8 theme for the http://vk.com (V kontakte) */
 
 @-moz-document domain(vk.com) 
 { 
@@ -26,7 +26,7 @@ a
 
 /* Active text */
 #im_submit_hint_opts .radiobtn , .bd_header_info , .bd_header_month, .bd_day_cell.today .bd_day_text,
-.summary_tab_sel .summary_tab3 ,.im_tab_selected .im_tab3 , #graffiti_bottombar 
+.summary_tab_sel .summary_tab3 ,.im_tab_selected .im_tab3 , #graffiti_bottombar , .profile_blocked 
 { color: #2F2 !important; }
 
 /* Deleted */  
@@ -66,18 +66,19 @@ a
   background: rgba(05,10,0, 0.85) url(http://i51.fastpic.ru/big/2013/0322/ec/864fdbdf98367780a3b8dd0b94d9a8ec.png) !important;
 } 
 
-/* Buttons */
+/* Buttons */.left_count_wrap, 
 .videos_row a.quality,.group1 ,.button_blue button , .summary_tab_sel .summary_tab2, .summary_tab_sel .summary_tab2:hover ,
 .selector_container table.selector_table, .docs_choose_def_icon, div.wdd, .dialogs_new_msg, .medadd_c_polladd, .button_blue ,
 .page_members_box .member_row .actions a , #feed_searchext_map 
 {   
   border: 1px solid #282 !important;
-  background-color: #242 !important; 
+  background-color: #232 !important; 
   color: #2F2 !important;
 }
 
 /* Elements - passiv, heads, bottoms */
 #wk_buttons_panel , .wk_page_title_cont ,#wke_buttons, #graffiti_bottombar , .box_body .search_bar , .choose_search_cont .search_bar , .choose_more_btn ,
+.pvs_header ,#mail_box_topic_wrap ,
 div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdown .l_header div, .apps_i_panel, .apps_main , .apps_i_policy ,
 .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about , #mail_bar, .pv_comment , .wk_extpage_head_wrap , .wk_extpage_footer_wrap,
 .module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom , .invited_box , .info_msg ,.box_title, .choose_header ,
@@ -89,8 +90,8 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 { background-color: #131b15 !important; }
 
 /* Elements - activ */
-#privacy_dropdown .item, #privacy_dropdown .item_sel, #privacy_dropdown .item_sel_plus , .apps_i_cont,
-#privacy_dropdown .l_header div, #privacy_dropdown .l_item, #privacy_dropdown .l_item_sel,
+#privacy_dropdown .item, #privacy_dropdown .item_sel, #privacy_dropdown .item_sel_plus , .apps_i_cont,#pv_comments_header ,
+#privacy_dropdown .l_header div, #privacy_dropdown .l_item, #privacy_dropdown .l_item_sel,.pvs_act,
 .wddi, .wall_tt .bottom , #friends .info_msg ,#feed_recom_more ,.docs_empty , .preq_wrap , #choose_map .place_search_bar,
 #search_query_wrap, #docs_choose_more, #im_sound_controls, #pd, .fc_tab_txt, .rate_left, .post_like, .post_share, .search, .dark_box_cont ,
 #albums_load_more, #profile_editor, .page_actions a, .app_search, #group_like_module, .mail_envelope ,  .invite_box, .invite_box .about,
@@ -118,7 +119,7 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 
 /* Highlighted */
 
-#docs_choose_upload_area, .left_count_wrap, .feedback_row_answer_wrap, #mail_rows_t tr.new_msg, #dark_box_topic_wrap,
+#docs_choose_upload_area, .feedback_row_answer_wrap, #mail_rows_t tr.new_msg, #dark_box_topic_wrap,
 .selector_container td.selector_dropdown, .selector_container td.selector, #ac, .post_upload_dropbox_inner,
 #ts_cont_wrap a.ts_contact.active,.pad_msga, .pad_nwsa ,.fc_clist_inner, .add_media_item, .add_media_head,
 .im_tab_selected .im_tab2,   #im_resizer_wrap ,.wdd_add2 , #public #subscribe, #public #unsubscribe, #public #unshare,
@@ -143,7 +144,7 @@ input.text, input.search, textarea, input.big_text, .audio_filter, #audio_more_f
 { border: none !important; }
 
 /* Border recolor */
-.apps_i_policy , .apps_i_cont ,h2 , .apps_i_panel, .apps_options_bar ,
+.apps_i_policy , .apps_i_cont ,h2 , .apps_i_panel, .apps_options_bar ,#pv_comments_header ,
 div.ts_input_wrap, div.ts, .wall_tt .bottom ,.flist_search_cont ,.flist_col , #im_footer_sh, .im_add_row td, #im_footer_sh,
 #wrap1, #wrap2, .reply_field_wrap, .pedit_separator_bottom,  #mail_bar,.pv_comment ,  .mail_envelope , .dialogs_row,
 .pedit_privacy_padding_fix,.pedit_controls_separator, .separator div, .separator, .summary_tabs, .reply, .docs_item, .post, .more_div,
@@ -348,5 +349,20 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 #graffiti_resizer
 { background-image: url(http://i53.fastpic.ru/big/2013/0322/36/0574b5b0c32630261a8c2eafac569e36.gif) !important;}
 
-
+img.profile_no_ava
+{
+visibility: hidden !important;
+}
+/* koso kommunists x200 */
+#page_avatar {
+ background-image: url(http://i53.fastpic.ru/big/2013/0323/6b/ba2cc650d510d0da26c7a6435bf7fb6b.gif) !important;
+}
+.friends_photo_img[src="/images/camera_b.gif"]{
+visibility:hidden !important;
+}
+/* koso kommunists x100 */
+.friends_bigph_wrap
+{
+ background-image: url(http://i54.fastpic.ru/big/2013/0323/75/df32f2bc35bc7af5b104a2f324235c75.gif) !important;
+}
 }
