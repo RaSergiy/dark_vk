@@ -1,18 +1,18 @@
-/* VSekte-0.2.11 theme for the http://vk.com (V kontakte)
+/* VSekte-0.2.12 theme for the http://vk.com (V kontakte)
    Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
 { 
 
 /* ======== Major styles ======== */
-body
-{ background: #040804 url(http://i51.fastpic.ru/big/2013/0326/8d/0421ed601a5dc02fe0d4ac0eb85eff8d.png) !important;  }
+body, .wall_post_text
+{ background: #000 !important;  }
 
 .app_i_page_screen
 { background: #000000 !important;  }
 
 /* Base text */
-body, #content, .wall_module div.page_media_link_desc 
+body, #content, .wall_module div.page_media_link_desc , .video_upload_rules li span 
 { color: #EEE !important; }
 
 /* Recolor top nav links to match the top style */
@@ -100,9 +100,9 @@ div.wdd,
 }
 /* Elements - passiv, heads, bottoms */
 
-a.ts_search_link.active , #ts_search_sep , .bindmail_form ,#group_bl_bar, #group_l_bar,.new_public_header ,
+a.ts_search_link.active , #ts_search_sep , .bindmail_form ,#group_bl_bar, #group_l_bar,.new_public_header , .fc_tab_notify ,
 #wk_buttons_panel , .wk_page_title_cont ,#wke_buttons, #graffiti_bottombar , .box_body .search_bar , .choose_search_cont .search_bar , .choose_more_btn ,
-.pvs_header ,#mail_box_topic_wrap ,.docs_panel , #mail_top_msg div ,#gedit_users_admsearch_wrap, #gedit_users_search_wrap,
+.pvs_header ,#mail_box_topic_wrap ,.docs_panel , #mail_top_msg div ,#gedit_users_admsearch_wrap, #gedit_users_search_wrap,.wall_fixed .wall_fixed_more ,
 div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdown .l_header div, .apps_i_panel, .apps_main , .apps_i_policy ,
 .summary_wrap, #header, #unions_navigation.ads_unions_navigation_about , #mail_bar, .pv_comment , .wk_extpage_head_wrap , .wk_extpage_footer_wrap,
 .module.empty .module_body, .module_header .header_top, h4.page_top, .p_header_bottom , .invited_box , .info_msg ,.box_title, .choose_header ,
@@ -115,8 +115,8 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 
 /* Elements - activ */
 #privacy_dropdown .item, #privacy_dropdown .item_sel, #privacy_dropdown .item_sel_plus , .apps_i_cont,#pv_comments_header ,
-#privacy_dropdown .l_header div, #privacy_dropdown .l_item, #privacy_dropdown .l_item_sel,.pvs_act,#nomail ,
-.group_edit ,#group_edit_addr_table , .new_public_page , .new_public_body ,
+#privacy_dropdown .l_header div, #privacy_dropdown .l_item, #privacy_dropdown .l_item_sel,.pvs_act,#nomail , 
+.group_edit ,#group_edit_addr_table , .new_public_page , .new_public_body , #video_upload_info_box ,.photos_edit_album ,
 .wddi, .wall_tt .bottom , #friends .info_msg ,#feed_recom_more ,.docs_empty , .preq_wrap , #choose_map .place_search_bar,
 #search_query_wrap, #docs_choose_more, #im_sound_controls, #pd, .fc_tab_txt, .rate_left, .post_like, .post_share, .search, .dark_box_cont ,
 #albums_load_more, #profile_editor, .page_actions a, .app_search, #group_like_module, .mail_envelope ,  .invite_box, .invite_box .about,
@@ -317,7 +317,7 @@ body *
 
 /* mono_iconset.gif */
 .mail_attach_video, .mail_attach_audio, .mail_attach_mail, .mail_attach_doc, .mail_attach_geo, .mail_attach_wall, .mail_attach_gift, .mail_attach_photo ,
-.medadd_h, .current_audio, .profile_rate_warning .warning_row .img,.im_attach_photo, .im_attach_video, .im_attach_doc, .im_attach_mail, .im_attach_audio, .im_attach_geo, .im_attach_wall, .im_attach_gift ,
+.medadd_h, .profile_rate_warning .warning_row .img,.im_attach_photo, .im_attach_video, .im_attach_doc, .im_attach_mail, .im_attach_audio, .im_attach_geo, .im_attach_wall, .im_attach_gift ,
 .current_app, .wall_module .media_preview .share b,.wall_module .media_preview .note b,.wall_module .media_preview .poll b,
 .wall_module .media_desc b, .media_doc_icon, .media_audio_icon, .wall_signed_by, .places_module .icon, b.feed_gr_icon,b.feed_ev_icon,
 b.feed_tp_icon,b.feed_nt_icon, .fc_msg_att_icon_photo,.fc_msg_att_icon_video,.fc_msg_att_icon_doc,.fc_msg_att_icon_mail,
@@ -447,4 +447,3 @@ color: #4f4 !important; }
 }
 
 }
-
