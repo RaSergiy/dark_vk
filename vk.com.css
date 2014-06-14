@@ -1,4 +1,4 @@
-/* VSekte-0.2.13 theme for the http://vk.com (V kontakte)
+/* VSekte-0.2.14 theme for the http://vk.com (V kontakte)
    Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
@@ -123,7 +123,7 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 .side_filter, #feed_bar, #pva_more_photos, #pvsa_more_photos, .video_search, .video_albums_show_more , .groups_inv_cont,
 #photos_upload_area, #im_bar, .groups_list_search, .wr_header, .replies_open, .reply_fakebox, #settings_panel, .settings_privacy,
 #ts_cont_wrap, #profile_bottom_actions a ,.flist_search_cont , .groups_no_list , #profile_photos_upload, #intr_tt ,.tb_tabs,
-.summary_tabs, .docs_side_panel, #settings_panel .msg, .msg, .box_msg, .im_write
+.summary_tabs, .docs_side_panel, #settings_panel .msg, .msg, .box_msg, .im_write, .medadd_c_linkcon
 { background-color: #080D08 !important;}
 
 /* Float window */
@@ -195,7 +195,7 @@ div.ts_input_wrap, div.ts, .wall_tt .bottom ,.flist_search_cont ,.flist_col , #i
 
 /* Active border */
 .side_filter ,#pad_title_wrap, #pad_title,  .im_resizer , .box_title_wrap ,.box_title ,.im_editable , .cal_table .today,
-.apps_section_act , .apps_cat_section , .medadd_c_polladd, #group_edit_addr_table , .fc_msgs
+.apps_section_act , .apps_cat_section , .medadd_c_polladd, #group_edit_addr_table , .fc_msgs, .medadd_c_linkcon
 { border-color: #383 !important; }
 
 
