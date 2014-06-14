@@ -20,7 +20,7 @@ body, #content, .wall_module div.page_media_link_desc , .video_upload_rules li s
 { color: #000 !important; }
 
 /* Editable text */
-.im_editable, ul.listing li span , .tickets_side_tt.title .hint_wrap , #page_current_info
+.im_editable, ul.listing li span , .tickets_side_tt.title .hint_wrap , #page_current_info, .chat_onl, .fc_tab_title
 { color: #8F8 !important; }
 
 /* Links */
@@ -84,7 +84,7 @@ div.wdd,
 .search_subtab1.active , .left_count_wrap, #mv_comments_header ,#ts_cont_wrap a.ts_contact:first-child, #ts_cont_wrap a.ts_search_link:first-child ,
 .videos_row a.quality,.group1 ,.button_blue button ,  
 .selector_container table.selector_table, .docs_choose_def_icon, div.wdd, .dialogs_new_msg, .medadd_c_polladd, .button_blue ,
-.page_members_box .member_row .actions a , #feed_searchext_map , .im_tab_selected .im_tab2
+.page_members_box .member_row .actions a , #feed_searchext_map , .im_tab_selected .im_tab2, #chat_onl_wrap, .fc_tab_head 
 {   
   border: 1px solid #282 !important;
   background-color: #232 !important; 
@@ -110,11 +110,11 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 .settings_view_as_text, #new_ticket, .pd_apps_summary, .pd_apps_header, .box_title_wrap ,.login_mobile_sms_wrap,.apps_recent_more , .full_wall_tabs ,
 #pad_footer, .docs_search_bar, .apps_cat_filter, .app_tabs.t_bar, .side_panel, .box_controls, .bt_header,.preq_bottom , #payments_box_summary ,#im_footer_filler, 
 .im_new_msg .im_log_author, .im_new_msg .im_log_body, .fc_tab, .group1, .group2, .group3, .group4, .group5, .group6, .group7, .group8, .group9, .group10,
-.im_new_msg .im_log_date, #apps_wall_post_header, .im_editable, .wl_post_reply_form_forbidden, #join_school_next, #join_university_next
+.im_new_msg .im_log_date, #apps_wall_post_header, .im_editable, .wl_post_reply_form_forbidden, #join_school_next, #join_university_next, .fc_msgs
 { background-color: #131b15 !important; }
 
 /* Elements - activ */
-#privacy_dropdown .item, #privacy_dropdown .item_sel, #privacy_dropdown .item_sel_plus , .apps_i_cont,#pv_comments_header ,
+#ba_post, #chat_onl_wrap, #privacy_dropdown .item, #privacy_dropdown .item_sel, #privacy_dropdown .item_sel_plus , .apps_i_cont,#pv_comments_header ,
 #privacy_dropdown .l_header div, #privacy_dropdown .l_item, #privacy_dropdown .l_item_sel,.pvs_act,#nomail , 
 .group_edit ,#group_edit_addr_table , .new_public_page , .new_public_body , #video_upload_info_box ,.photos_edit_album ,
 .wddi, .wall_tt .bottom , #friends .info_msg ,#feed_recom_more ,.docs_empty , .preq_wrap , #choose_map .place_search_bar,
@@ -195,7 +195,7 @@ div.ts_input_wrap, div.ts, .wall_tt .bottom ,.flist_search_cont ,.flist_col , #i
 
 /* Active border */
 .side_filter ,#pad_title_wrap, #pad_title,  .im_resizer , .box_title_wrap ,.box_title ,.im_editable , .cal_table .today,
-.apps_section_act , .apps_cat_section , .medadd_c_polladd, #group_edit_addr_table 
+.apps_section_act , .apps_cat_section , .medadd_c_polladd, #group_edit_addr_table , .fc_msgs
 { border-color: #383 !important; }
 
 
@@ -386,6 +386,10 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 #graffiti_resizer
 { background-image: url(http://i53.fastpic.ru/big/2013/0322/36/0574b5b0c32630261a8c2eafac569e36.gif) !important;}
 
+/* Chats */
+.chats_sp
+{ background-image: url(http://i64.fastpic.ru/big/2014/0614/cc/f4e9218cedf291e2506d4cc7c0451acc.png) !important; }
+
 img.profile_no_ava
 {
 visibility: hidden !important;
@@ -447,3 +451,4 @@ color: #4f4 !important; }
 }
 
 }
+
