@@ -1,4 +1,4 @@
-/* VSekte-0.2.14 theme for the http://vk.com (V kontakte)
+/* VSekte-0.2.15 theme for the http://vk.com (V kontakte)
    Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
@@ -80,9 +80,9 @@ border-color: #141 !important;
 } 
 
 /* Buttons */
-div.wdd,
+div.wdd, .web_cam_photo ,.flat_button,
 .search_subtab1.active , .left_count_wrap, #mv_comments_header ,#ts_cont_wrap a.ts_contact:first-child, #ts_cont_wrap a.ts_search_link:first-child ,
-.videos_row a.quality,.group1 ,.button_blue button ,  
+.videos_row a.quality,.group1 ,.button_blue button ,  .photos_choose_more_albums ,
 .selector_container table.selector_table, .docs_choose_def_icon, div.wdd, .dialogs_new_msg, .medadd_c_polladd, .button_blue ,
 .page_members_box .member_row .actions a , #feed_searchext_map , .im_tab_selected .im_tab2, #chat_onl_wrap, .fc_tab_head 
 {   
@@ -114,6 +114,8 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 { background-color: #131b15 !important; }
 
 /* Elements - activ */
+  
+.feedback_reply_row_wrap, 
 #ba_post, #chat_onl_wrap, #privacy_dropdown .item, #privacy_dropdown .item_sel, #privacy_dropdown .item_sel_plus , .apps_i_cont,#pv_comments_header ,
 #privacy_dropdown .l_header div, #privacy_dropdown .l_item, #privacy_dropdown .l_item_sel,.pvs_act,#nomail , 
 .group_edit ,#group_edit_addr_table , .new_public_page , .new_public_body , #video_upload_info_box ,.photos_edit_album ,
@@ -127,7 +129,7 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 { background-color: #080D08 !important;}
 
 /* Float window */
-#profile_full_info h4 a.fl_r,#graffiti_gwrap ,
+#profile_full_info h4 a.fl_r,#graffiti_gwrap , .emoji_block_cont,
 #wk_box, #pv_box, #pad_cont, .fc_tab_log , #stl_bg, #fc_contacts, .box_body , #pv_actions .left, #pv_actions .right, .bd_day_cell
 { background-color: #080808 !important; }
 
@@ -154,10 +156,11 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 #ac, .post_upload_dropbox_inner, 
 #ts_cont_wrap a.ts_contact.active,.pad_msga, .pad_nwsa ,.fc_clist_inner, 
 #im_resizer_wrap , #public #subscribe, #public #unsubscribe, #public #unshare,
-#public .like_module ,.login_m_vk_com, .apps_section_act ,#graffiti_wrapper ,#graffiti_topbar ,  #group_photos_upload,
+#public .like_module ,.login_m_vk_com, .apps_section_act ,#graffiti_wrapper ,#graffiti_topbar ,  #group_photos_upload,  
+#feedback_unread_bar, .photos_add_selected .photos_add_cont,#photos_go_to_album_cont,
  
 /* Inputs, forms */
-.wke_cont ,#graffiti_cpwrap , #photos_choose_upload_area , #mail_box_editable,
+.feedback_reply_field, .wke_cont ,#graffiti_cpwrap , #photos_choose_upload_area , #mail_box_editable,
 .wall_module #submit_post_box, iframe, .token , .wall_tt .wrap, .bp_tt_wrap, .mott_wrap, .verified_tt_wrap, .gifts_tt_wrap ,
 .box_body, .mail_box_cont, .fc_clist_filter_wrap, .actions, #mv_controls, .wall_module .reply_fakebox_wrap, #wl_reply_form_inner, 
 #im_peer_controls_wrap,.tt .tt_text , .wall_module .reply_fakebox, .tdd_search .tdd_control, #fmenu, .docs_add_new, .docs_item_icon , .tdd_tag,
@@ -194,6 +197,7 @@ div.ts_input_wrap, div.ts, .wall_tt .bottom ,.flist_search_cont ,.flist_col , #i
 { border: 1px solid !important; }
 
 /* Active border */
+.feedback_reply_row_wrap, .photos_add_upl_row ,
 .side_filter ,#pad_title_wrap, #pad_title,  .im_resizer , .box_title_wrap ,.box_title ,.im_editable , .cal_table .today,
 .apps_section_act , .apps_cat_section , .medadd_c_polladd, #group_edit_addr_table , .fc_msgs, .medadd_c_linkcon
 { border-color: #383 !important; }
@@ -351,7 +355,7 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 { background-image: url(http://i52.fastpic.ru/big/2013/0321/94/105f4349b06afa8fa139b123084edb94.png) !important; }
 
 /* im_smile_cross.png */
-.im_smile_icon_on, .im_smile_icon, .mbe_smile_icon_on, .mbe_smile_icon
+.im_smile_icon_on, .im_smile_icon, .mbe_smile_icon_on, .mbe_smile_icon, .emoji_smile_icon
 { background-image: url(http://i52.fastpic.ru/big/2013/0322/08/6c061f11e5378cdb5856251e89eb6608.png) !important; }
 
 /* ddtooltip.png */
@@ -379,7 +383,7 @@ a.add_media_type_17_photo add_media_item, a.add_media_type_17_video add_media_it
 { background-image: url(http://i52.fastpic.ru/big/2013/0321/d8/d4b846c23f5c373bf3464e4a314729d8.gif) !important;}
 
 /* attach_photo.gif */
-.im_upload_wrap div.im_upload
+.im_upload_wrap div.im_upload, .post_upload_wrap div.post_upload 
 { background-image: url(http://i51.fastpic.ru/big/2013/0324/60/11851811f35f033c4b040abdb47ebc60.gif) !important;}
 
 /* graffiti_resizer.gif */
@@ -396,12 +400,21 @@ visibility: hidden !important;
 }
 /* kosmo kommunists x200 */
 #page_avatar {
- background-image: url(http://i53.fastpic.ru/big/2013/0323/6b/ba2cc650d510d0da26c7a6435bf7fb6b.gif) !important;
+  background-image: url(http://i53.fastpic.ru/big/2013/0323/6b/ba2cc650d510d0da26c7a6435bf7fb6b.gif) !important;
   background-repeat:  no-repeat !important;
+}
+  
+.feedback_reply_tail {
+  background-image: url(http://i58.fastpic.ru/big/2015/1017/b6/902c290109038d5185aa10b1268eb9b6.png) !important;
 }
 #page_avatar.group_no_avatar, #page_avatar.public_no_avatar {
   background: #000 url(http://i53.fastpic.ru/big/2013/0323/6b/ba2cc650d510d0da26c7a6435bf7fb6b.gif) no-repeat !important;
   padding: 240px 10px 15px !important;
+}
+  
+.web_cam_photo_icon {
+  border-left: none !important;  
+  background-image: url(http://i58.fastpic.ru/big/2015/1017/29/e1b3e1f9282a54047fc14521cdde7429.png) !important;
 }
 #page_avatar img
 { 
@@ -444,11 +457,22 @@ color: #4f4 !important; }
 { border: 1px solid #999 !important; }
 
 /* Float window border */
-#ts_cont_wrap 
+#ts_cont_wrap, .emoji_block_cont, .emoji_tabs , .emoji_tabs_wrap, .emoji_tab_sel, .emoji_tab_sel:hover
 {
   border: 1px solid #444 !important;
   background: #111 !important;
 }
+  
+.emoji_block_cont {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.32) !important;
+  border-radius: 5px !important;
+}
+  
+
+.emoji_expanded .emoji_expand_shadow, .emoji_expanded .emoji_expand_shadow_top {
+    background: None !important;;
+}
+
 
 }
 
