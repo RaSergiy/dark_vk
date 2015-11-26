@@ -1,4 +1,4 @@
-/* VSekte-0.2.15 theme for the http://vk.com (V kontakte)
+/* VSekte-0.2.16 theme for the http://vk.com (V kontakte)
    Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
@@ -40,7 +40,7 @@ a
 }
 
 /* No bg images */
-.button_blue button
+.button_blue button, .mv_reply_field_tail
 { background-image: none !important; }
 
 /* Hidden elements */
@@ -115,7 +115,7 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 
 /* Elements - activ */
   
-.feedback_reply_row_wrap, 
+.feedback_reply_row_wrap, #mv_reply_box, #pv_comment,
 #ba_post, #chat_onl_wrap, #privacy_dropdown .item, #privacy_dropdown .item_sel, #privacy_dropdown .item_sel_plus , .apps_i_cont,#pv_comments_header ,
 #privacy_dropdown .l_header div, #privacy_dropdown .l_item, #privacy_dropdown .l_item_sel,.pvs_act,#nomail , 
 .group_edit ,#group_edit_addr_table , .new_public_page , .new_public_body , #video_upload_info_box ,.photos_edit_album ,
@@ -160,7 +160,7 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 #feedback_unread_bar, .photos_add_selected .photos_add_cont,#photos_go_to_album_cont,
  
 /* Inputs, forms */
-.feedback_reply_field, .wke_cont ,#graffiti_cpwrap , #photos_choose_upload_area , #mail_box_editable,
+.feedback_reply_field, .wke_cont ,#graffiti_cpwrap , #photos_choose_upload_area , #mail_box_editable, #mv_comment,
 .wall_module #submit_post_box, iframe, .token , .wall_tt .wrap, .bp_tt_wrap, .mott_wrap, .verified_tt_wrap, .gifts_tt_wrap ,
 .box_body, .mail_box_cont, .fc_clist_filter_wrap, .actions, #mv_controls, .wall_module .reply_fakebox_wrap, #wl_reply_form_inner, 
 #im_peer_controls_wrap,.tt .tt_text , .wall_module .reply_fakebox, .tdd_search .tdd_control, #fmenu, .docs_add_new, .docs_item_icon , .tdd_tag,
@@ -197,8 +197,8 @@ div.ts_input_wrap, div.ts, .wall_tt .bottom ,.flist_search_cont ,.flist_col , #i
 { border: 1px solid !important; }
 
 /* Active border */
-.feedback_reply_row_wrap, .photos_add_upl_row ,
-.side_filter ,#pad_title_wrap, #pad_title,  .im_resizer , .box_title_wrap ,.box_title ,.im_editable , .cal_table .today,
+.feedback_reply_row_wrap, .photos_add_upl_row, #mv_comment,
+.side_filter ,#pad_title_wrap, #pad_title,  .im_resizer , .box_title_wrap ,.box_title ,.im_editable , .cal_table .today, #pv_comment,
 .apps_section_act , .apps_cat_section , .medadd_c_polladd, #group_edit_addr_table , .fc_msgs, .medadd_c_linkcon
 { border-color: #383 !important; }
 
@@ -475,4 +475,6 @@ color: #4f4 !important; }
 
 
 }
+
+
 
