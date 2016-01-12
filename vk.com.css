@@ -1,4 +1,4 @@
-/* VSekte-0.2.16 theme for the http://vk.com (V kontakte)
+/* VSekte-0.2.17 theme for the http://vk.com (V kontakte)
    Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
@@ -28,6 +28,8 @@ a
 { color: #F82 !important; }
 
 /* Active text */
+  
+#ba_text,
 #im_submit_hint_opts .radiobtn , .bd_header_info , .bd_header_month, .bd_day_cell.today .bd_day_text,#ts_search_sep ,
 .summary_tab_sel .summary_tab3 ,.im_tab_selected .im_tab3 , #graffiti_bottombar , .profile_blocked , .ts_search_link .ts_contact_name 
 { color: #2F2 !important; }
@@ -115,7 +117,7 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 
 /* Elements - activ */
   
-.feedback_reply_row_wrap, #mv_reply_box, #pv_comment,
+.feedback_reply_row_wrap, #mv_reply_box, #pv_comment, #ba_text,
 #ba_post, #chat_onl_wrap, #privacy_dropdown .item, #privacy_dropdown .item_sel, #privacy_dropdown .item_sel_plus , .apps_i_cont,#pv_comments_header ,
 #privacy_dropdown .l_header div, #privacy_dropdown .l_item, #privacy_dropdown .l_item_sel,.pvs_act,#nomail , 
 .group_edit ,#group_edit_addr_table , .new_public_page , .new_public_body , #video_upload_info_box ,.photos_edit_album ,
@@ -197,7 +199,7 @@ div.ts_input_wrap, div.ts, .wall_tt .bottom ,.flist_search_cont ,.flist_col , #i
 { border: 1px solid !important; }
 
 /* Active border */
-.feedback_reply_row_wrap, .photos_add_upl_row, #mv_comment,
+.feedback_reply_row_wrap, .photos_add_upl_row, #mv_comment, #ba_text,
 .side_filter ,#pad_title_wrap, #pad_title,  .im_resizer , .box_title_wrap ,.box_title ,.im_editable , .cal_table .today, #pv_comment,
 .apps_section_act , .apps_cat_section , .medadd_c_polladd, #group_edit_addr_table , .fc_msgs, .medadd_c_linkcon
 { border-color: #383 !important; }
