@@ -30,7 +30,7 @@
   /* Active */
    .ui_search_input_block, input.ui_search_field,.im-page .im-page--dialogs-footer.ui_grey_block ,.im-page .im-page--dialogs-footer.ui_grey_block ,
   .ui_search ui_search_field_empty _wrap,
-  #post_field, input.ui_search_field, .fakeinput, div[contenteditable="true"], input.big_text, input.dark, input.search, input.text, textarea,
+  #post_field, input.ui_search_field, .fakeinput, div[contenteditable="true"], input.big_text, input.dark, input.search, input.text, textarea
   { 
     background-color: #080D08 !important;
     color: #8F8 !important;
