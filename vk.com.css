@@ -1,10 +1,71 @@
-/* VSekte-0.2.17 theme for the http://vk.com (V kontakte)
+/* VSekte-0.3.1 theme for the http://vk.com (V kontakte)
    Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
 { 
 
+/* ------- New vk style ------- */
+  .back {
+    border: none !important;
+  }
+ .page_block, .im-page-history-w, .im-page.im-page_classic, .im-page--chat-body-wrap-inner,
+  #page_header, .im-create, .im-page.im-page_classic .im-page--dcontent
+  { background: #000 !important;  
+    color: #EEE !important;
+  }
+  
+  /* Passive blocks */
+  .ui_tabs_header, 
+  .im-page--toolsw, im-page--dialog-search, .im-page.im-page_classic .im-page--chat-input,
+  .im-page .im-page--history-new-bar, .im-page .im-page--history-new-bar_days > span,
+  .chat_onl_inner
+  {
+    background-color: #131b15 !important;
+  }
+  
+  /* Active */
+  #post_field, input.ui_search_field
+  { 
+    background-color: #080D08 !important;
+    color: #8F8 !important;
+    border: 1px solid;
+    border-color: #141 !important;
+  }
+  /* Menu */
+  #submit_post, #post_upload_dropbox, .post_upload_dropbox
+  {
+    background-color: #232 !important;
+    border: 1px solid;
+    border-color: #282 !important;
+   }
+  
+  /* Selected */
+  .ui_rmenu_item:hover, .ui_rmenu_subitem:hover, .ui_rmenu_item_sel, .ui_rmenu_item_sel:hover,
+   mess_selected:first-child, .im-mess.im-mess_unread:first-child,
+   .im-mess.im-mess_selected, .im-mess.im-mess_selected:hover
+  {
+    background-color: #220 !important;
+  }
+  
+  /* Custom fix */
+  .im-page.im-page_classic, .im-page--header-chat, .im-page.im-page_classic .im-page--chat-input,
+  .ui_rmenu_sliding .ui_rmenu_item_sel,  mess_selected:first-child, .im-mess.im-mess_unread:first-child {
+    border-color: #232 !important;
+  }
+
+  /* Icons */
+  
+  .top_home_logo
+  { background: rgba(0,0,0,0.0) url(http://i52.fastpic.ru/big/2013/0321/58/7bf364e4c2076189e87c57ce1cd36f58.gif) no-repeat !important; 
+    height: 42px !important;
+    width: 145px !important;
+  }
+
+/* ---------------------------- */
+  
 /* ======== Major styles ======== */
+
+
 body, .wall_post_text
 { background: #000 !important;  }
 
@@ -54,7 +115,7 @@ a
 { background-color: transparent !important; }
 
 /* No background */
-#audio.new .actions, div.ts_input_wrap,#settings_addr_table ,#settings_bl_bar ,
+#audio.new .actions, div.ts_input_wrap,#settings_addr_table ,#settings_bl_bar , .post,
 #page_wrap, #side_bar, #side_bar ol li .left_row, .back, .app_notify_row.new ,
 .search_results td.results, .search_results, .search_table, .search_table td.results,
 .bp_post, .feed_row, #profile_actions a, .mail_message , 
@@ -117,7 +178,7 @@ div.pd_apps_footer, .tb_title , #privacy_dropdown .header div , #privacy_dropdow
 
 /* Elements - activ */
   
-.feedback_reply_row_wrap, #mv_reply_box, #pv_comment, #ba_text,
+.feedback_reply_row_wrap, #mv_reply_box, #pv_comment, #ba_text, #fwr_form, #fwr_text, #fw_reply_text, .fw_reply,
 #ba_post, #chat_onl_wrap, #privacy_dropdown .item, #privacy_dropdown .item_sel, #privacy_dropdown .item_sel_plus , .apps_i_cont,#pv_comments_header ,
 #privacy_dropdown .l_header div, #privacy_dropdown .l_item, #privacy_dropdown .l_item_sel,.pvs_act,#nomail , 
 .group_edit ,#group_edit_addr_table , .new_public_page , .new_public_body , #video_upload_info_box ,.photos_edit_album ,
@@ -297,6 +358,7 @@ body *
 /* hat.gif */
 #page_header .left, #page_header .right
 { background-image: url(http://i52.fastpic.ru/big/2013/0321/58/7bf364e4c2076189e87c57ce1cd36f58.gif) !important; }
+  
 #page_header .back 
 { background: rgba(0,0,0,0.0) url(http://i52.fastpic.ru/big/2013/0321/58/7bf364e4c2076189e87c57ce1cd36f58.gif) 0px -43px repeat-x !important; }
 
@@ -477,6 +539,3 @@ color: #4f4 !important; }
 
 
 }
-
-
-
