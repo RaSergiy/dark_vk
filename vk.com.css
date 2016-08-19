@@ -54,8 +54,7 @@
   .feedback_row_wrap.reply_box_open .submit_post,.feedback_row_wrap.reply_box_open:hover, .feedback_sticky_row.hover,.feedback_sticky_row:hover,
   .top_notify_cont .feedback_row:not(.dld).hover,.top_notify_cont .feedback_row:not(.dld):hover, 
   .top_notify_cont .feedback_row:not(.dld).unread.hover,.top_notify_cont .feedback_row:not(.dld).unread:hover,
-  .feed_notifications .more_link:hover, .feed_top_hashtags_item:hover,
-
+  .feed_notifications .more_link:hover, .feed_top_hashtags_item:hover
   {
     color: #EE4 !important;
     background-color: #232 !important;
