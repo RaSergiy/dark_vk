@@ -1,4 +1,4 @@
-/* VSekte-0.3.21 theme for the http://vk.com (V kontakte)
+/* VSekte-0.3.22 theme for the http://vk.com (V kontakte)
    Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
@@ -35,7 +35,7 @@
   
   /* Active */
    .ui_search_input_block, input.ui_search_field,.im-page .im-page--dialogs-footer.ui_grey_block ,.im-page .im-page--dialogs-footer.ui_grey_block ,
-  .ui_search ui_search_field_empty _wrap,
+  .ui_search ui_search_field_empty _wrap, .page_media_poll_wrap, 
   #post_field, input.ui_search_field, .fakeinput, div[contenteditable="true"], input.big_text, input.dark, input.search, input.text, textarea
   { 
     background-color: #080D08 !important;
@@ -86,7 +86,8 @@
   
   /* New msg */
   .nim-dialog.nim-dialog_hovered:not(.nim-dialog_deleted), .nim-dialog.nim-dialog_selected:not(.nim-dialog_deleted), 
-  .nim-dialog.nim-dialog_unread.nim-dialog_classic:not(.nim-dialog_deleted), .nim-dialog:hover:not(.nim-dialog_deleted)
+  .nim-dialog.nim-dialog_unread.nim-dialog_classic:not(.nim-dialog_deleted), .nim-dialog:hover:not(.nim-dialog_deleted),
+  .im-mess.im-mess_unread
   {
     background-color: #022 !important;
   }
