@@ -1,4 +1,4 @@
-/* VSekte-0.3.22 theme for the http://vk.com (V kontakte)
+/* VSekte-0.3.23 theme for the http://vk.com (V kontakte)
    Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
@@ -22,7 +22,8 @@
   .wall_module .reply_box, .wall_module .reply_fakebox_wrap , .pv_cont .pv_reply_form_wrap .reply_form ,
   .im-page--toolsw, im-page--dialog-search, .im-page.im-page_classic .im-page--chat-input,
   .im-page .im-page--history-new-bar, .im-page .im-page--history-new-bar_days > span,
-  .chat_onl_inner
+  .chat_onl_inner, .audio_row.audio_row_current, .audio_row.audio_row_playing, 
+  .audio_row.audio_row_current:hover, .audio_row.audio_row_playing:hover, .audio_friends_list
   {
     background-color: #131b15 !important;
     color: #eee !important;
@@ -34,6 +35,13 @@
   }
   
   /* Active */
+
+  .audio_page_player .audio_page_player_title
+  {
+    color: #8F8 !important;
+  }
+
+   .audio_page_player, .ui_search_new.ui_search_field_empty .ui_search_button_search,
    .ui_search_input_block, input.ui_search_field,.im-page .im-page--dialogs-footer.ui_grey_block ,.im-page .im-page--dialogs-footer.ui_grey_block ,
   .ui_search ui_search_field_empty _wrap, .page_media_poll_wrap, 
   #post_field, input.ui_search_field, .fakeinput, div[contenteditable="true"], input.big_text, input.dark, input.search, input.text, textarea
@@ -42,11 +50,14 @@
     color: #8F8 !important;
     border: 1px solid #141 !important;
   }
+
   .wall_module .reply_form, .submit_post {
     background-color: #080D08 !important;
   }
   
-  .im-page.im-page_classic .im-page--header, .pv_author_block, .pv_comments    {
+  .im-page.im-page_classic .im-page--header, .pv_author_block, .pv_comments,.ui_search_new .ui_search_input_inner,
+  .ui_search_new .ui_search_button_search
+  {
     border-color: #080D08 !important;
   }
   
@@ -594,6 +605,4 @@ color: #4f4 !important; }
 
 
 }
-
-
 
