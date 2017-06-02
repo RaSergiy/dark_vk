@@ -1,4 +1,4 @@
-/* VSekte-0.3.24 theme for the http://vk.com (V kontakte)
+/* VSekte-0.3.25 theme for the http://vk.com (V kontakte)
    Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
@@ -9,7 +9,7 @@
     border: none !important;
   }
  .page_block, .im-page-history-w, .im-page.im-page_classic, .im-page--chat-body-wrap-inner,
-  #page_header, .im-create, .im-page.im-page_classic .im-page--dcontent
+  #page_header, .im-create, .im-page.im-page_classic .im-page--dcontent, .wall_reasons_list
   { background: #000 !important;  
     color: #EEE !important;
   }
