@@ -1,4 +1,4 @@
-/* VSekte-0.3.25 theme for the http://vk.com (V kontakte)
+/* VSekte-0.3.26 theme for the http://vk.com (V kontakte)
    Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
@@ -9,7 +9,7 @@
     border: none !important;
   }
  .page_block, .im-page-history-w, .im-page.im-page_classic, .im-page--chat-body-wrap-inner,
-  #page_header, .im-create, .im-page.im-page_classic .im-page--dcontent, .wall_reasons_list
+  #page_header, .im-create, .im-page.im-page_classic .im-page--dcontent, .wall_reasons_list, body
   { background: #000 !important;  
     color: #EEE !important;
   }
@@ -24,7 +24,7 @@
   .im-page .im-page--history-new-bar, .im-page .im-page--history-new-bar_days > span,
   .chat_onl_inner, .audio_row.audio_row_current, .audio_row.audio_row_playing, 
   .audio_row.audio_row_current:hover, .audio_row.audio_row_playing:hover, .audio_friends_list, 
-  .eltt, .eltt.feature_intro_tt::after, .eltt.feature_intro_tt::before
+  .eltt, .eltt.feature_intro_tt::after, .eltt.feature_intro_tt::before, .wk_text blockquote
 
   {
     background-color: #131b15 !important;
@@ -47,7 +47,9 @@
    .ui_search_input_block, input.ui_search_field,.im-page .im-page--dialogs-footer.ui_grey_block ,.im-page .im-page--dialogs-footer.ui_grey_block ,
   .ui_search ui_search_field_empty _wrap, .page_media_poll_wrap, 
   #post_field, input.ui_search_field, .fakeinput, div[contenteditable="true"], input.big_text, input.dark, input.search, input.text, textarea,
-  .im-chat-input, .ms_items_more, .top_notify_show_all
+  .im-chat-input, .ms_items_more, .top_notify_show_all, .top_notify_cont .feedback_content .audio_row:hover,
+  .audio_row.audio_row_current .audio_row_inner,.audio_row.audio_row_playing .audio_row_inner,.audio_row.audio_row_current .audio_row_inner:hover,
+  .audio_row.audio_row_playing .audio_row_inner:hover, .audio_row:not(.audio_row_current):hover .audio_row_inner
   { 
     background-color: #080D08 !important;
     color: #8F8 !important;
@@ -91,6 +93,8 @@
    }
   
   /* Selected */
+  .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text, 
+  .nim-dialog.nim-dialog_classic.nim-dialog_unread-out.nim-dialog_muted .nim-dialog--inner-text,
   .feedback_row_wrap.unread:not(.feedback_row_touched),
   .ui_rmenu_item:hover, .ui_rmenu_subitem:hover, .ui_rmenu_item_sel, .ui_rmenu_item_sel:hover,
    mess_selected:first-child, .im-mess.im-mess_unread:first-child,
