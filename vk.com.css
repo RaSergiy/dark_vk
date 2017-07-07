@@ -1,10 +1,15 @@
-/* VSekte-0.3.26 theme for the http://vk.com (V kontakte)
+/* VSekte-0.3.27 theme for the http://vk.com (V kontakte)
    Author: http://vk.com/rasergiy */
 
 @-moz-document domain(vk.com) 
 { 
 
 /* ------- New vk style ------- */
+  
+  #feed_blog_reminder, #ads_left {
+    display: none !important;
+  }
+  
   .back {
     border: none !important;
   }
@@ -43,7 +48,7 @@
     color: #8F8 !important;
   }
 
-  .audio_page_player, .ui_search_new.ui_search_field_empty .ui_search_button_search, 
+  .audio_page_player, .ui_search_new.ui_search_field_empty .ui_search_button_search, .ap_layer .audio_pl_snippet .audio_pl_snippet__header_inner,
    .ui_search_input_block, input.ui_search_field,.im-page .im-page--dialogs-footer.ui_grey_block ,.im-page .im-page--dialogs-footer.ui_grey_block ,
   .ui_search ui_search_field_empty _wrap, .page_media_poll_wrap, 
   #post_field, input.ui_search_field, .fakeinput, div[contenteditable="true"], input.big_text, input.dark, input.search, input.text, textarea,
@@ -56,7 +61,7 @@
     border: 1px solid #141 !important;
   }
 
-  .wall_module .reply_form, .submit_post {
+  .wall_module .reply_form, .submit_post, .audio_pl_snippet {
     background-color: #080D08 !important;
   }
   
@@ -93,12 +98,12 @@
    }
   
   /* Selected */
-  .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text, 
+  .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text, .feedback_sticky_row.unread,
   .nim-dialog.nim-dialog_classic.nim-dialog_unread-out.nim-dialog_muted .nim-dialog--inner-text,
   .feedback_row_wrap.unread:not(.feedback_row_touched),
   .ui_rmenu_item:hover, .ui_rmenu_subitem:hover, .ui_rmenu_item_sel, .ui_rmenu_item_sel:hover,
    mess_selected:first-child, .im-mess.im-mess_unread:first-child,
-   .im-mess.im-mess_selected, .im-mess.im-mess_selected:hover, .feedback_row_answer, 
+   .im-mess.im-mess_selected, .im-mess.im-mess_selected:hover, .feedback_row_answer, ,
   .media_selector .ms_items_more .ms_item:hover, .media_selector .ms_item:hover,
   .audio_table a.more:hover, .audio_friend:hover, .audio_friend.audio_friend_selected ,
   .audio_popular_owner:hover, .audio_list .actions a:hover , .audio_more_friends:hover ,
